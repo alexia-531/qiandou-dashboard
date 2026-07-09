@@ -61,9 +61,10 @@ body{
 .lb-meta .dot{width:6px;height:6px;border-radius:50%;background:#10b981;animation:pulse 2s infinite}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
 
-/* 目录式竖版海报排行: 3-4 cols desktop */
-.lb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
-@media(max-width:600px){.lb-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+/* 目录式竖版海报排行: 固定3列, 平均分布 */
+.lb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:768px){.lb-grid{grid-template-columns:repeat(2,1fr);gap:10px}}
+@media(max-width:400px){.lb-grid{grid-template-columns:1fr;gap:10px}}
 
 .lb-card{
   background:var(--card);border-radius:var(--r);box-shadow:var(--sh);
