@@ -312,6 +312,83 @@ body{
 .search-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.12);transform:translateY(-1px)}
 .sc-foot{margin-top:8px;font-size:11px;color:var(--accent);text-align:right;opacity:.85}
 
+/* ========== 艺人爆火潜力评估 ========== */
+.art-7{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.art-7c{background:linear-gradient(135deg,#eef2ff,#f5f3ff);border:1px solid #e0e7ff;color:#4338ca;
+  font-size:12px;font-weight:600;padding:7px 12px;border-radius:20px;display:flex;align-items:center;gap:5px}
+.art-7n{display:inline-flex;width:18px;height:18px;border-radius:50%;background:#5b6af0;color:#fff;
+  font-size:11px;align-items:center;justify-content:center;flex-shrink:0}
+
+.art-cats{display:flex;flex-direction:column;gap:10px;margin-bottom:16px}
+.art-cat{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;border:1px solid var(--bor)}
+.art-cat-h{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
+.art-cat-h:hover{background:#f8f9ff}
+.art-cat-idx{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#5b6af0,#8b5cf6);color:#fff;
+  font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.art-cat-t{flex:1;font-size:15px;font-weight:700;color:#1e293b}
+.art-cat-w{font-size:12px;font-weight:700;color:#fff;background:var(--accent);padding:3px 10px;border-radius:20px;white-space:nowrap}
+.art-cat-ar{font-size:12px;color:var(--t2);transition:transform .2s}
+.art-cat.col .art-cat-ar{transform:rotate(-90deg)}
+.art-cat-b{display:none;padding:4px 16px 16px;border-top:1px solid #f0f1f5}
+.art-cat.col .art-cat-b{display:block}
+.art-sub{padding:8px 0;border-bottom:1px dashed #eef0f4}
+.art-sub:last-child{border-bottom:none}
+.art-sub-t{font-size:13px;font-weight:700;color:#334155;margin-bottom:3px;display:flex;align-items:center;gap:6px}
+.art-sub-d{font-size:12px;color:#64748b;line-height:1.6}
+.art-thr-in{display:inline-block;font-size:11px;font-weight:700;color:#047857;background:#ecfdf5;
+  border:1px solid #a7f3d0;border-radius:6px;padding:1px 7px;margin-top:5px}
+
+/* 真假热度区分 */
+.art-real{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);padding:16px;margin-bottom:16px;border:1px solid var(--bor)}
+.art-real h4,.art-thr h4,.art-eval h4{font-size:15px;font-weight:700;color:#1e293b;margin-bottom:12px;display:flex;align-items:center;gap:6px}
+.art-real-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:680px){.art-real-grid{grid-template-columns:1fr}}
+.art-fake,.art-true{border-radius:11px;padding:13px 14px;font-size:12.5px;line-height:1.65}
+.art-fake{background:#fef2f2;border:1px solid #fecaca;color:#991b1b}
+.art-true{background:#ecfdf5;border:1px solid #a7f3d0;color:#065f46}
+.art-fake b,.art-true b{display:block;font-size:13px;margin-bottom:5px}
+.art-flow{margin-top:12px;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:10px;padding:12px 14px;
+  font-size:13px;color:#334155;text-align:center;font-weight:600}
+.art-flow span{color:var(--accent)}
+
+/* 临界阈值表 */
+.art-thr{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);padding:16px;margin-bottom:16px;border:1px solid var(--bor)}
+.art-tbl{width:100%;border-collapse:collapse;font-size:12.5px;min-width:560px}
+.art-tbl th{background:#f8fafc;color:#475569;font-weight:700;text-align:left;padding:9px 10px;border-bottom:2px solid #eef1f5}
+.art-tbl td{padding:9px 10px;border-bottom:1px solid #f0f1f5;color:#334155;vertical-align:top}
+.art-tbl tr:hover td{background:#f8f9ff}
+.art-tbl .gt{color:#047857;font-weight:700}
+.art-tbl .lt{color:#b45309;font-weight:700}
+.art-tbl .sc{color:#b91c1c;font-weight:700}
+
+/* 评估器 */
+.art-eval{background:var(--card);border-radius:var(--r);box-shadow:var(--sh);padding:16px;border:1px solid var(--bor)}
+.art-eval .hint{font-size:12px;color:var(--t2);margin-bottom:14px;line-height:1.6}
+.art-slider{margin-bottom:13px}
+.art-slider-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
+.art-slider-name{font-size:13px;font-weight:600;color:#334155}
+.art-slider-name .w{font-size:11px;color:#fff;background:var(--accent);border-radius:10px;padding:1px 7px;margin-left:6px}
+.art-slider-val{font-size:14px;font-weight:800;color:var(--accent)}
+.art-slider input[type=range]{width:100%;accent-color:var(--accent);height:5px}
+.art-slider.sync input[type=range]{accent-color:var(--purple)}
+.art-slider.sync .art-slider-name .w{background:var(--purple)}
+.art-slider.sync .art-slider-val{color:var(--purple)}
+.art-result{margin-top:8px;background:linear-gradient(135deg,#f8fafc,#eef2ff);border-radius:12px;padding:16px;text-align:center}
+.art-score{font-size:46px;font-weight:900;line-height:1;color:var(--accent)}
+.art-score-l{font-size:12px;color:var(--t2);margin-top:2px}
+.art-verdict{display:inline-block;margin-top:10px;font-size:15px;font-weight:800;padding:6px 18px;border-radius:22px}
+.art-verdict.good{background:#10b981;color:#fff}
+.art-verdict.ok{background:#3b82f6;color:#fff}
+.art-verdict.warn{background:#f59e0b;color:#fff}
+.art-verdict.bad{background:#ef4444;color:#fff}
+.art-diag{margin-top:11px;font-size:12.5px;line-height:1.65;color:#475569;text-align:left;background:#fff;border:1px solid #eef1f5;border-radius:10px;padding:11px 13px}
+.art-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.art-btns button{flex:1;min-width:120px;border:1.5px solid var(--bor);background:var(--card);color:#475569;
+  padding:9px 10px;border-radius:10px;font-size:12.5px;font-weight:600;cursor:pointer;transition:.15s}
+.art-btns button:hover{border-color:var(--accent);color:var(--accent);background:#f0f2ff}
+.art-btns button.ex1{border-color:#10b981;color:#047857}
+.art-btns button.ex2{border-color:#ef4444;color:#b91c1c}
+
 </style>
 </head>
 <body>
@@ -342,6 +419,221 @@ body{
 <div class="lb-wrap" id="upcomingArea">
   <div class="lb-header"><h3>⏳ 待播剧热度排行</h3><div class="lb-meta">数据源：欢网大数据 · 艾漫数据 · 腾讯/爱奇艺站内期待榜 · 微博剧集榜（综合期待值）· 点击看详情</div></div>
   <div class="up-list" id="upcomingList"></div>
+</div>
+
+<!-- ═════════ 艺人爆火潜力评估 ═════════ -->
+<div class="lb-wrap" id="artistArea">
+  <div class="lb-header"><h3>🌟 艺人爆火潜力评估体系</h3><div class="lb-meta"><span class="dot"></span>不看静态粉丝总量，看「脱水增长率·路人渗透·角色绑定·多平台协同·粉丝质量·后续资源·舆论正负占比」7 大指标 · 片方/品牌参照 艾漫 / 云合 / 灯塔 / 百度指数 / 平台后台脱水数据</div></div>
+
+  <!-- 7 核心指标 -->
+  <div class="art-7">
+    <div class="art-7c"><span class="art-7n">①</span>脱水增长率</div>
+    <div class="art-7c"><span class="art-7n">②</span>路人渗透</div>
+    <div class="art-7c"><span class="art-7n">③</span>角色绑定</div>
+    <div class="art-7c"><span class="art-7n">④</span>多平台协同</div>
+    <div class="art-7c"><span class="art-7n">⑤</span>粉丝质量</div>
+    <div class="art-7c"><span class="art-7n">⑥</span>后续资源</div>
+    <div class="art-7c"><span class="art-7n">⑦</span>舆论正负占比</div>
+  </div>
+
+  <!-- 6 大类可落地指标 -->
+  <div class="art-cats">
+    <!-- 一 -->
+    <div class="art-cat">
+      <div class="art-cat-h" onclick="this.parentElement.classList.toggle('col')">
+        <div class="art-cat-idx">1</div>
+        <div class="art-cat-t">作品实绩 <span style="font-size:12px;color:var(--t2);font-weight:400">（演员最重要前提）</span></div>
+        <div class="art-cat-w">权重 40%</div>
+        <div class="art-cat-ar">▼</div>
+      </div>
+      <div class="art-cat-b">
+        <div class="art-sub">
+          <div class="art-sub-t">① 角色独立热度（最关键）</div>
+          <div class="art-sub-d">剧集播出期间，<b>角色词条热度 ＞ 演员本人词条热度</b>＝爆火前兆，说明观众记住角色而非粉丝刷数据。#XX角色# 搜索量、二创素材量远超明星本名＝路人被人物打动。</div>
+          <div class="art-thr-in">参考：剧集市占率同期前 3 · 角色站内热度破亿 · 片段二创全网播放激增</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">② 预约与开播新增</div>
+          <div class="art-sub-d">杀青‑定档阶段，艺人带动剧集预约上涨幅度。例：一部剧预约 450 万，其中 60% 新增来自该演员路人期待→平台判定具备扛剧潜力（宋威龙《野狗骨头》即案例）。</div>
+          <div class="art-thr-in">阈值：带动预约新增占比 ≥ 50%</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">③ 剧集完结长尾数据</div>
+          <div class="art-sub-d">剧播完 1‑2 个月，角色剪辑仍源源产出＝角色深入人心；播完热度立刻归零＝仅短期红利。</div>
+          <div class="art-thr-in">阈值：长尾留存 ≥ 1 个月</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">④ 电影实绩</div>
+          <div class="art-sub-d">票房贡献度、单人角色讨论占比、豆瓣口碑评分；电影出圈比电视剧难度更高。</div>
+          <div class="art-thr-in">阈值：豆瓣 ≥ 7.0 · 单人角色讨论占比高</div>
+        </div>
+      </div>
+    </div>
+    <!-- 二 -->
+    <div class="art-cat">
+      <div class="art-cat-h" onclick="this.parentElement.classList.toggle('col')">
+        <div class="art-cat-idx">2</div>
+        <div class="art-cat-t">全平台社交脱水热度</div>
+        <div class="art-cat-w">权重 25%</div>
+        <div class="art-cat-ar">▼</div>
+      </div>
+      <div class="art-cat-b">
+        <div class="art-sub">
+          <div class="art-sub-t">抖音（路人盘·国民度，权重最高）</div>
+          <div class="art-sub-d">FYP 推荐流量占比 ＞70% ＝爆火信号；片段完播率 ＞65%；艺人话题 7‑15 天成倍上涨；日均新增粉 1‑5 万稳步（突然暴涨几十万基本是买量）。评论区路人占比高＝非粉丝控评。</div>
+          <div class="art-thr-in">阈值：FYP＞70% · 完播＞65% · 日增 1-5 万</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">小红书（年轻女性·品牌认可度）</div>
+          <div class="art-sub-d">看收藏/转发/关注（CES：关注权重＞评论＞点赞），点赞最易刷、收藏与新增粉难作假。爆火特征＝大量素人自发发笔记分析颜值/氛围/角色，非营销号统一文案。</div>
+          <div class="art-thr-in">阈值：收藏+关注占比高 · 素人笔记为主</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">微博（粉丝基本盘+全网发酵场）</div>
+          <div class="art-sub-d">脱水转评赞（剔除机器灌水）；多次冲进热搜前 10 且路人讨论占比高（非买的文娱低位热搜）；超话脱水签到人数＝真实活跃粉。</div>
+          <div class="art-thr-in">阈值：热搜前 10 · 非粉发言占比高</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">百度指数（全网客观·几乎无法人为操控）</div>
+          <div class="art-sub-d">日均搜索量快速攀升＝大量路人主动搜索。粉丝不会大幅拉高百度指数，业内公认最客观的数据。</div>
+          <div class="art-thr-in">阈值：搜索量持续爬升</div>
+        </div>
+      </div>
+    </div>
+    <!-- 三 -->
+    <div class="art-cat">
+      <div class="art-cat-h" onclick="this.parentElement.classList.toggle('col')">
+        <div class="art-cat-idx">3</div>
+        <div class="art-cat-t">粉丝质量数据</div>
+        <div class="art-cat-w">权重 15%</div>
+        <div class="art-cat-ar">▼</div>
+      </div>
+      <div class="art-cat-b">
+        <div class="art-sub">
+          <div class="art-sub-t">① 粉丝画像（平台后台）</div>
+          <div class="art-sub-d">潜力型＝分布全国各地、20‑35 岁年轻群体占多数、路人粉居多；危险＝集中几城、年龄偏低、学生占比过高（商务价值有限）。</div>
+          <div class="art-thr-in">阈值：20-35 岁占比高 · 全国分布</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">② 粉丝粘性（脱水）</div>
+          <div class="art-sub-d">粉丝主动二创产出、角色剪辑、绘画、文案数量。能火的艺人会自发形成大规模创作；买粉账号只有点赞、几乎无二创。</div>
+          <div class="art-thr-in">阈值：二创产出量大</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">③ 粉丝增长来源</div>
+          <div class="art-sub-d">新增粉丝大部分来自剧集片段，而非粉丝群/粉丝引流＝健康破圈。</div>
+          <div class="art-thr-in">阈值：新增来自作品片段为主</div>
+        </div>
+      </div>
+    </div>
+    <!-- 四 -->
+    <div class="art-cat">
+      <div class="art-cat-h" onclick="this.parentElement.classList.toggle('col')">
+        <div class="art-cat-idx">4</div>
+        <div class="art-cat-t">舆论口碑占比</div>
+        <div class="art-cat-w">权重 10%</div>
+        <div class="art-cat-ar">▼</div>
+      </div>
+      <div class="art-cat-b">
+        <div class="art-sub">
+          <div class="art-sub-t">艾漫后台正/中/负占比</div>
+          <div class="art-sub-d">爆火艺人＝中性路人评价 60%+·正面 30%·负面＜10%，路人评价越多后续资源越好；只有粉丝无脑夸、路人嘲讽居多→短期热度高但平台/品牌会规避，后续资源断层。</div>
+          <div class="art-thr-in">阈值：中性＞60% · 正面＞30% · 负面＜10%</div>
+        </div>
+        <div class="art-sub">
+          <div class="art-sub-t">角色滤镜</div>
+          <div class="art-sub-d">观众区分演员本人与角色，不会因角色好感度崩塌就讨厌本人。</div>
+        </div>
+      </div>
+    </div>
+    <!-- 五 -->
+    <div class="art-cat">
+      <div class="art-cat-h" onclick="this.parentElement.classList.toggle('col')">
+        <div class="art-cat-idx">5</div>
+        <div class="art-cat-t">商务资源变化 <span style="font-size:12px;color:var(--t2);font-weight:400">（结果性指标）</span></div>
+        <div class="art-cat-w">权重 5%</div>
+        <div class="art-cat-ar">▼</div>
+      </div>
+      <div class="art-cat-b">
+        <div class="art-sub">
+          <div class="art-sub-t">品牌与资源兑现</div>
+          <div class="art-sub-d">热度起来后品牌方反应最现实：平价→中端→高端品牌升级、短时间新增商务邀约；高奢后台问卷好感度提升；剧集资源从配角→S 级剧男女主，头部制作方主动递剧本（肖战 7 月杀青《谍报上不封顶》＝热度兑现结果）。</div>
+          <div class="art-thr-in">阈值：代言升级 / S级资源递剧本</div>
+        </div>
+      </div>
+    </div>
+    <!-- 六 -->
+    <div class="art-cat">
+      <div class="art-cat-h" onclick="this.parentElement.classList.toggle('col')">
+        <div class="art-cat-idx">6</div>
+        <div class="art-cat-t">长期走势：增长率＞瞬时数据 <span style="font-size:12px;color:var(--t2);font-weight:400">（行业核心判断）</span></div>
+        <div class="art-cat-w">权重 5%</div>
+        <div class="art-cat-ar">▼</div>
+      </div>
+      <div class="art-cat-b">
+        <div class="art-sub">
+          <div class="art-sub-t">健康趋势 vs 虚假热度</div>
+          <div class="art-sub-d">健康＝连续 15‑30 天每周环比涨 10‑25% 稳步爬升；虚假＝某天暴涨后迅速下跌、热度断层；空窗期留存＝剧播完 1‑2 月无新物料仍维持搜索量＝热度沉淀成功，播完立刻无人讨论＝一次性热度。</div>
+          <div class="art-thr-in">阈值：周环比 +10~25% · 空窗留存 ≥ 1 月</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 真假热度区分 -->
+  <div class="art-real">
+    <h4>🔍 真假热度区分（黄金法则）</h4>
+    <div class="art-real-grid">
+      <div class="art-fake"><b>❌ 假热度（刷量局限单平台）</b>微博数据爆炸，但抖音、小红书、百度指数毫无起色——只花钱做微博；某天突然暴涨几十万粉后迅速回落；播放量只来自已关注粉丝（粉丝圈自嗨）；只有粉丝控评、无路人讨论。</div>
+      <div class="art-true"><b>✅ 真潜力（全平台同步上涨）</b>抖音路人爆火 → 小红书跟风讨论 → 微博话题发酵 → 百度指数上涨，4 个平台同步上涨；FYP 推荐占比高、素人自发二创、中性路人评价占多数。</div>
+    </div>
+    <div class="art-flow">抖音路人爆火 <span>→</span> 小红书跟风 <span>→</span> 微博发酵 <span>→</span> 百度指数上涨（四平台同步＝真红利）</div>
+  </div>
+
+  <!-- 临界参考阈值 -->
+  <div class="art-thr">
+    <h4>📊 临界参考阈值</h4>
+    <div style="overflow-x:auto">
+    <table class="art-tbl">
+      <thead><tr><th>维度</th><th>真潜力（达标）</th><th>警戒（偏弱）</th><th>危险（虚假）</th></tr></thead>
+      <tbody>
+        <tr><td>多平台协同</td><td class="gt">4 平台同步上涨</td><td class="lt">2‑3 平台</td><td class="sc">仅单平台</td></tr>
+        <tr><td>角色 vs 演员热度</td><td class="gt">角色＞演员</td><td class="lt">基本持平</td><td class="sc">演员＞＞角色（刷数据）</td></tr>
+        <tr><td>抖音 FYP 推荐占比</td><td class="gt">＞70%</td><td class="lt">40‑70%</td><td class="sc">＜40%</td></tr>
+        <tr><td>片段完播率</td><td class="gt">＞65%</td><td class="lt">40‑65%</td><td class="sc">＜40%</td></tr>
+        <tr><td>日均新增粉</td><td class="gt">1‑5 万稳步</td><td class="lt">暴涨后回落</td><td class="sc">单日暴涨几十万</td></tr>
+        <tr><td>百度指数</td><td class="gt">持续爬升</td><td class="lt">平稳</td><td class="sc">无变化</td></tr>
+        <tr><td>舆论正负</td><td class="gt">中性＞60%·负面＜10%</td><td class="lt">正面为主</td><td class="sc">路人嘲讽多</td></tr>
+        <tr><td>周增长率</td><td class="gt">+10~25%</td><td class="lt">波动</td><td class="sc">暴涨速跌</td></tr>
+        <tr><td>空窗期留存</td><td class="gt">≥1 月</td><td class="lt">约 2 周</td><td class="sc">归零</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- 爆火潜力评估器 -->
+  <div class="art-eval">
+    <h4>🧮 爆火潜力评估器</h4>
+    <div class="hint">拖动各项打分（0‑100，请基于<b>脱水后数据</b>自评/他评），系统按权重自动计算「加权潜力分」，并结合「多平台协同度」给出真假热度诊断。分值仅作参考，非绝对结论。</div>
+    <div class="art-slider"><div class="art-slider-top"><span class="art-slider-name">① 作品实绩<span class="w">40%</span></span><span class="art-slider-val" id="artSv1">50</span></div><input type="range" min="0" max="100" value="50" id="artS1" oninput="artEval()"></div>
+    <div class="art-slider"><div class="art-slider-top"><span class="art-slider-name">② 全平台社交脱水热度<span class="w">25%</span></span><span class="art-slider-val" id="artSv2">50</span></div><input type="range" min="0" max="100" value="50" id="artS2" oninput="artEval()"></div>
+    <div class="art-slider"><div class="art-slider-top"><span class="art-slider-name">③ 粉丝质量<span class="w">15%</span></span><span class="art-slider-val" id="artSv3">50</span></div><input type="range" min="0" max="100" value="50" id="artS3" oninput="artEval()"></div>
+    <div class="art-slider"><div class="art-slider-top"><span class="art-slider-name">④ 舆论口碑占比<span class="w">10%</span></span><span class="art-slider-val" id="artSv4">50</span></div><input type="range" min="0" max="100" value="50" id="artS4" oninput="artEval()"></div>
+    <div class="art-slider"><div class="art-slider-top"><span class="art-slider-name">⑤ 商务资源变化<span class="w">5%</span></span><span class="art-slider-val" id="artSv5">50</span></div><input type="range" min="0" max="100" value="50" id="artS5" oninput="artEval()"></div>
+    <div class="art-slider"><div class="art-slider-top"><span class="art-slider-name">⑥ 长期走势<span class="w">5%</span></span><span class="art-slider-val" id="artSv6">50</span></div><input type="range" min="0" max="100" value="50" id="artS6" oninput="artEval()"></div>
+    <div class="art-slider sync"><div class="art-slider-top"><span class="art-slider-name">多平台协同度（门控）<span class="w">诊断</span></span><span class="art-slider-val" id="artSyncV">50</span></div><input type="range" min="0" max="100" value="50" id="artSync" oninput="artEval()"></div>
+    <div class="art-result">
+      <div class="art-score" id="artScore">50</div>
+      <div class="art-score-l">加权潜力分（满分 100）</div>
+      <div class="art-verdict warn" id="artVerdict">🔍 待观察</div>
+      <div class="art-diag" id="artDiag">拖动上方滑块开始评估。</div>
+    </div>
+    <div class="art-btns">
+      <button class="ex1" onclick="artPreset('real')">📥 示例：真潜力艺人</button>
+      <button class="ex2" onclick="artPreset('fake')">📥 示例：单平台买量</button>
+      <button onclick="artReset()">↺ 重置</button>
+    </div>
+  </div>
 </div>
 
 <div class="tbs" id="tabsArea"></div>
@@ -507,6 +799,63 @@ function renderUpcoming(){
     '</div>';
   });
   document.getElementById('upcomingList').innerHTML=html;
+}
+
+// ═══ 艺人爆火潜力评估器 ═══
+var ART_W=[40,25,15,10,5,5];
+function artEval(){
+  var v=[],i;
+  for(i=0;i<6;i++){ var s=parseFloat(document.getElementById('artS'+(i+1)).value); v.push(s); document.getElementById('artSv'+(i+1)).textContent=s; }
+  var sync=parseFloat(document.getElementById('artSync').value);
+  document.getElementById('artSyncV').textContent=sync;
+  var score=0;
+  for(i=0;i<6;i++){ score += v[i]*ART_W[i]; }
+  score=Math.round(score/100);
+  var verdict,cls,diag;
+  if(sync<40){
+    cls='bad';
+    verdict = score>=60 ? '🔥 高分但疑似虚火' : '❄️ 虚火 / 单平台买量';
+    diag='⚠️ 多平台协同度偏低（'+sync+'）：仅单平台数据突出、其余平台无起色，高度疑似买量/虚火。黄金法则——真潜力是抖音→小红书→微博→百度四平台同步上涨，刷出来的数据只会局限单平台。';
+  } else if(v[1]<35){
+    cls = score>=70 ? 'ok' : 'warn';
+    verdict = score>=70 ? '📈 作品强·声量未破圈' : '🔍 待观察（声量未破圈）';
+    diag='全平台社交脱水热度偏弱（'+v[1]+'），暂未形成跨平台路人声量，当前更像作品/粉丝圈内热度，需持续观察破圈能力。';
+  } else if(score>=75 && sync>=60){
+    cls='good';
+    verdict='🔥 爆火潜力强（真潜力）';
+    diag='✅ 多平台同步上涨（协同 '+sync+'）+ 加权潜力 '+score+'：符合真潜力特征，具备爆火基础。继续跟踪作品兑现与空窗期留存。';
+  } else if(score>=55){
+    cls='ok';
+    verdict='📈 稳步上升·有潜力';
+    diag='📈 加权潜力 '+score+'、多平台协同 '+sync+'，稳步上升、有潜力，需作品持续兑现与口碑沉淀。';
+  } else if(score>=35){
+    cls='warn';
+    verdict='🔍 待观察';
+    diag='🔍 加权潜力 '+score+'，处于观察区间，建议跟踪 15‑30 天增长率与空窗期留存再下定论。';
+  } else {
+    cls='bad';
+    verdict='❄️ 低热度';
+    diag='❄️ 加权潜力 '+score+'，整体热度偏低，暂不具备爆火条件。';
+  }
+  document.getElementById('artScore').textContent=score;
+  var vb=document.getElementById('artVerdict');
+  vb.textContent=verdict; vb.className='art-verdict '+cls;
+  document.getElementById('artDiag').textContent=diag;
+}
+function artPreset(type){
+  var set=function(id,val){ var el=document.getElementById(id); if(el){el.value=val;} };
+  if(type==='real'){
+    set('artS1',88);set('artS2',82);set('artS3',75);set('artS4',80);set('artS5',65);set('artS6',78);set('artSync',85);
+  } else {
+    set('artS1',30);set('artS2',72);set('artS3',40);set('artS4',45);set('artS5',20);set('artS6',25);set('artSync',18);
+  }
+  artEval();
+}
+function artReset(){
+  var set=function(id,val){ var el=document.getElementById(id); if(el){el.value=val;} };
+  for(var i=1;i<=6;i++) set('artS'+i,50);
+  set('artSync',50);
+  artEval();
 }
 
 // ═══ 更新日志 ═══
@@ -689,6 +1038,7 @@ function renderSearchResults(){
     document.getElementById('movieSec').style.display='none';
     document.getElementById('heatArea').style.display='';
     document.getElementById('upcomingArea').style.display='';
+    document.getElementById('artistArea').style.display='';
     document.getElementById('tabsArea').style.display='';
     renderTable();return;
   }
@@ -698,6 +1048,7 @@ function renderSearchResults(){
   document.getElementById('movieSec').style.display='none';
   document.getElementById('heatArea').style.display='none';
   document.getElementById('upcomingArea').style.display='none';
+  document.getElementById('artistArea').style.display='none';
   document.getElementById('tabsArea').style.display='none';
   area.style.display='';
 
@@ -909,6 +1260,7 @@ function doSearch(){
       document.getElementById('dramaSec').style.display='';
       document.getElementById('heatArea').style.display='';
       document.getElementById('upcomingArea').style.display='';
+      document.getElementById('artistArea').style.display='';
       document.getElementById('tabsArea').style.display='';
       renderTable();
     }
