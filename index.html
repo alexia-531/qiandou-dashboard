@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes">
-<title>巧豆传媒 · 剧集动态</title>
+<title>巧豆传媒 · 水晶球数据动态</title>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
 :root{
@@ -298,13 +298,24 @@ body{
 .ed-ico{display:inline-block;margin-left:6px;cursor:pointer;color:#5b6af0;font-size:13px;opacity:.85;vertical-align:middle}
 .ed-ico:hover{opacity:1}
 .ed-toast{position:fixed;left:50%;top:18px;transform:translateX(-50%);background:#1a1d2e;color:#fff;padding:11px 18px;border-radius:11px;font-size:13px;z-index:90;box-shadow:0 8px 24px rgba(0,0,0,.3);max-width:90vw;text-align:center}
+
+.lk{cursor:pointer;color:var(--accent);font-weight:600}
+.lk:hover{text-decoration:underline}
+.m-cast{font-size:13px;color:#334155;line-height:1.6;margin-bottom:10px}
+.m-cast-k{display:inline-block;font-weight:700;color:var(--accent);margin-right:4px}
+.modal-ph{width:100%;min-height:170px;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-size:18px;font-weight:700;color:#fff;background:linear-gradient(135deg,#6366f1,#8b5cf6);line-height:1.4}
+.modal-poster{position:relative}
+.search-card{cursor:pointer;transition:box-shadow .15s,transform .15s}
+.search-card:hover{box-shadow:0 6px 18px rgba(0,0,0,.12);transform:translateY(-1px)}
+.sc-foot{margin-top:8px;font-size:11px;color:var(--accent);text-align:right;opacity:.85}
+
 </style>
 </head>
 <body>
 <div class="c">
 
 <div class="tb">
-  <h1>🎬 巧豆传媒 · <span>剧集动态</span></h1>
+  <h1>🎬 巧豆传媒 · <span>水晶球数据动态</span></h1>
   <div class="up" id="upTime">加载中…</div>
 </div>
 
@@ -334,7 +345,7 @@ body{
 
 <div class="sec" id="dramaSec">
   <div class="sec-h" onclick="this.parentElement.classList.toggle('col')">
-    <h2 id="tblTitle">📋 剧集列表</h2>
+    <h2 id="tblTitle">📋 水晶球数据动态</h2>
     <span class="ar">▼</span>
   </div>
   <div class="tw">
@@ -358,7 +369,7 @@ body{
   <div class="pg" id="movPg"></div>
 </div>
 
-<div class="ft">巧豆传媒剧集动态系统 · 每日 09:00 CST 自动更新 · 数据源：广电备案 + 平台官微 + 行业媒体 + Vlinkage/猫眼/云合</div>
+<div class="ft">巧豆传媒水晶球数据动态系统 · 每日 09:00 CST 自动更新 · 数据源：广电备案 + 平台官微 + 行业媒体 + Vlinkage/猫眼/云合</div>
 
 <!-- ═══ 网页内编辑 ═══ -->
 <button id="editFab" class="edit-fab" title="编辑模式" onclick="edToggle()">✎</button>
@@ -572,7 +583,7 @@ function renderTable(ftab,fpage){
 
   document.getElementById('tblBody').innerHTML=page.map(function(d,i){
     var gi=__D.dramas.indexOf(d);
-    return '<tr><td>'+(start+i+1)+'</td><td class="nm">'+d.name+(ED.on?'<span class="ed-ico" onclick="edOpenEdit(\'drama\','+gi+')">✎</span>':'')+'</td>'+
+    return '<tr><td>'+(start+i+1)+'</td><td class="nm"><span class="lk" onclick="showDetail('+gi+',\'drama\')">'+d.name+'</span>'+(ED.on?'<span class="ed-ico" onclick="edOpenEdit(\'drama\','+gi+')">✎</span>':'')+'</td>'+
       '<td class="ad">'+(d.actors||'—')+'</td><td class="dr">'+(d.team||'—')+'</td>'+
       '<td>'+fmtP(d.platform)+'</td><td>'+badge(d)+'</td>'+
       '<td class="rm">'+(d.remarks||'—')+'</td></tr>';
@@ -604,7 +615,7 @@ function renderMovies(fpage){
     var b=m.status;
     if((b||'').indexOf('定档')>=0) b='<span class="bd bd-date">定档</span>';
     else if((b||'').indexOf('上映')>=0) b='<span class="bd bd-live">'+b+'</span>';
-    return '<tr><td>'+(start+i+1)+'</td><td class="nm">'+m.name+(ED.on?'<span class="ed-ico" onclick="edOpenEdit(\'movie\','+mi+')">✎</span>':'')+'</td><td>'+b+'</td>'+
+    return '<tr><td>'+(start+i+1)+'</td><td class="nm"><span class="lk" onclick="showDetail('+mi+',\'movie\')">'+m.name+'</span>'+(ED.on?'<span class="ed-ico" onclick="edOpenEdit(\'movie\','+mi+')">✎</span>':'')+'</td><td>'+b+'</td>'+
       '<td class="ad">'+(m.actors||'—')+'</td><td>'+(m.director||'—')+'</td><td>'+(m.genre||'—')+'</td><td class="rm">'+(m.remarks||'—')+'</td></tr>';
   }).join('');
 
@@ -699,13 +710,15 @@ function renderSearchResults(){
     h+='<h3 style="margin:16px 0 10px;font-size:14px;color:var(--accent)">🎬 匹配电影（'+r.movies.length+'部）</h3>';
     h+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px">';
     r.movies.forEach(function(m){
-      h+='<div class="search-card">'+
+      var gi=__D.movies.indexOf(m);
+      h+='<div class="search-card" onclick="showDetail('+gi+',\'movie\')">'+
         '<div class="sc-hd"><span class="sc-name">'+m.name+'</span> '+(m.status?'<span class="bd bd-date">'+m.status+'</span>':'')+'</div>'+
         '<div class="sc-row"><span class="sc-k">演员</span> '+(m.actors||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">导演</span> '+(m.director||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">类型</span> '+(m.genre||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">时间</span> '+(m.date||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">备注</span> '+(m.remarks||'—')+'</div>'+
+        '<div class="sc-foot">🔎 点击查看详情</div>'+
         '</div>';
     });
     h+='</div>';
@@ -716,13 +729,15 @@ function renderSearchResults(){
     h+='<h3 style="margin:16px 0 10px;font-size:14px;color:var(--accent)">🎬 匹配剧集（'+r.dramas.length+'部）</h3>';
     h+='<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:10px">';
     r.dramas.forEach(function(d){
-      h+='<div class="search-card">'+
+      var gi=__D.dramas.indexOf(d);
+      h+='<div class="search-card" onclick="showDetail('+gi+',\'drama\')">'+
         '<div class="sc-hd"><span class="sc-name">'+d.name+'</span> '+badgeFn(d)+'</div>'+
         '<div class="sc-row"><span class="sc-k">演员</span> '+(d.actors||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">导演/制作</span> '+(d.team||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">平台</span> '+fmtPFn(d.platform)+'</div>'+
         '<div class="sc-row"><span class="sc-k">进度</span> '+(d.category||'—')+' · '+(d.infoType||'—')+'</div>'+
         '<div class="sc-row"><span class="sc-k">备注</span> '+(d.remarks||'—')+'</div>'+
+        '<div class="sc-foot">🔎 点击查看详情</div>'+
         '</div>';
     });
     h+='</div>';
@@ -768,60 +783,99 @@ function renderSearchResults(){
 
 // ═══ 详情弹窗 ═══
 function showDetail(idx, type){
-  var d;
+  var d, rank=null, isAiring=false, isMovie=false;
   if(type==='airing'){
     d = __D.heat.airingRank[idx];
     if(!d) return;
-    var rank = idx+1;
-    var tierCls = rank<=3 ? ' t'+rank : '';
-    var v1Cls = 'mm-val', v1Val;
+    rank = idx+1; isAiring=true;
+    var dm = __D.dramas.find(function(x){return x.name===d.name;});
+    if(dm){ d = Object.assign({}, d, {team:dm.team, remarks:dm.remarks, category:dm.category, status:dm.status, infoType:dm.infoType}); }
+  } else if(type==='drama'){
+    var dr = __D.dramas[idx];
+    if(!dr) return;
+    var am = (__D.heat.airingRank||[]).find(function(r){return r.name===dr.name;});
+    d = Object.assign({}, dr, am||{});
+    isAiring = !!am;
+  } else if(type==='movie'){
+    d = __D.movies[idx];
+    if(!d) return;
+    isMovie = true;
+  } else return;
+  renderDetail(d, rank, isAiring, isMovie);
+}
+
+function renderDetail(d, rank, isAiring, isMovie){
+  var poster = d.poster||'';
+  var hasPoster = poster.indexOf('http')===0 || poster.indexOf('./')===0;
+  var v1Cls='mm-val', v1Val='—', v2Val='—';
+  if(isAiring){
     if(d.heat>0){v1Cls+=' up'; v1Val=d.heat.toFixed(1)+'%';}
-    else v1Val = d.heatLabel.replace('云合市占 ','').replace('云合中剧','中剧');
-    var v2Val = d.heatLabel2;
-    if(d.heat2>50) v2Val = String(d.heat2);
-    
-    var tags = d.note ? d.note.split('·').filter(function(x){return x.trim();}) : [];
-    var hotTags = tags.slice(0,6);
-    
-    var html = '<div class="modal-overlay" onclick="if(event.target===this)document.getElementById(\'detailModal\').remove()">'+
-      '<div class="modal-box">'+
-        '<button class="modal-close" onclick="document.getElementById(\'detailModal\').remove()">✕</button>'+
-        '<div class="modal-poster"><img src="'+d.poster+'" alt="'+d.name+'" onerror="this.style.display=\'none\'"></div>'+
-        '<div class="modal-info">'+
-          '<h3>'+d.name+' <span style="font-size:13px;color:var(--t2);font-weight:400">#'+rank+'</span></h3>'+
-          '<div class="m-actors">'+d.actors+'</div>'+
-          '<div class="m-tags"><span class="lb-tag pf">'+d.platform+'</span>';
-    if(d.trend==='up') html+='<span class="lb-tag ht">📈 上升中</span>';
-    else if(d.trend==='new') html+='<span class="lb-tag ht">🆕 首播</span>';
-    html+='</div>';
-    
-    html+='<div class="modal-metrics">'+
+    else v1Val = d.heatLabel ? d.heatLabel.replace('云合市占 ','').replace('云合中剧','中剧') : '—';
+    v2Val = (d.heat2>50)? String(d.heat2) : (d.heatLabel2||'—');
+  }
+  // 更新进度：在播剧取 progress；其余由 状态/类型/上映日 推导
+  var progress = d.progress || null;
+  if(!progress){
+    var pp=[];
+    if(d.status) pp.push(d.status);
+    if(d.infoType && d.infoType!==d.status) pp.push(d.infoType);
+    if(d.date) pp.push(d.date);
+    progress = pp.join('；') || null;
+  }
+  var weibo = d.weiboHot;
+  var syn = d.synopsis;
+
+  var html = '<div class="modal-overlay" onclick="if(event.target===this)document.getElementById(\'detailModal\').remove()">'+
+    '<div class="modal-box">'+
+      '<button class="modal-close" onclick="document.getElementById(\'detailModal\').remove()">✕</button>';
+  if(hasPoster){
+    html += '<div class="modal-poster"><img src="'+d.poster+'" alt="'+d.name+'" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'"><div class="modal-ph" style="display:none">'+d.name+'</div></div>';
+  } else {
+    html += '<div class="modal-ph">'+d.name+'</div>';
+  }
+  html += '<div class="modal-info">'+
+      '<h3>'+d.name+(rank?' <span style="font-size:13px;color:var(--t2);font-weight:400">#'+rank+' 在播</span>':'')+'</h3>'+
+      '<div class="m-cast"><span class="m-cast-k">👥 演员阵容</span> '+(d.actors||'—')+'</div>'+
+      '<div class="m-tags"><span class="lb-tag pf">'+fmtP(d.platform)+'</span>';
+  if(d.status) html += '<span class="lb-tag ht">'+d.status+'</span>';
+  if(d.category) html += '<span class="lb-tag">'+d.category+'</span>';
+  if(isMovie && d.genre) html += '<span class="lb-tag">'+d.genre+'</span>';
+  html += '</div>';
+
+  if(isAiring){
+    html += '<div class="modal-metrics">'+
       '<div class="modal-metric"><div class="'+v1Cls+'">'+v1Val+'</div><div class="mm-label">云合市占率</div></div>'+
       '<div class="modal-metric"><div class="mm-val">'+v2Val+'</div><div class="mm-label">热度指数</div></div>'+
       '</div>';
-    
-    if(d.progress){
-      html+='<div class="modal-synopsis" style="background:#f0fdf4;border-left-color:#10b981"><h4>📺 更新进度</h4><p>'+d.progress+'</p></div>';
-    }
-
-    if(d.weiboHot && d.weiboHot.length){
-      html+='<div class="modal-hotsearch"><h4>🔥 近期微博热搜</h4>';
-      d.weiboHot.forEach(function(t){html+='<span class="modal-hs-tag">'+t+'</span>';});
-      html+='</div>';
-    }
-
-    if(d.synopsis){
-      html+='<div class="modal-synopsis"><h4>📖 剧情简介</h4><p>'+d.synopsis+'</p></div>';
-    }
-
-    html+='<div class="modal-note">💡 '+d.note+'</div>'+
-        '</div></div></div>';
-    
-    var wrapper = document.createElement('div');
-    wrapper.id = 'detailModal';
-    wrapper.innerHTML = html;
-    document.body.appendChild(wrapper);
   }
+
+  if(progress){
+    html += '<div class="modal-synopsis" style="background:#f0fdf4;border-left-color:#10b981"><h4>📺 更新进度 / 状态</h4><p>'+progress+'</p></div>';
+  }
+
+  if(weibo && weibo.length){
+    html += '<div class="modal-hotsearch"><h4>🔥 近期微博热搜</h4>';
+    weibo.forEach(function(t){html += '<span class="modal-hs-tag">'+t+'</span>';});
+    html += '</div>';
+  }
+
+  html += '<div class="modal-synopsis"><h4>📖 剧情简介</h4><p>'+(syn||'（该剧目暂未收录剧情简介，播出后补充）')+'</p></div>';
+
+  var noteTxt = d.remarks || d.note || '';
+  if(noteTxt){
+    html += '<div class="modal-note">💡 '+noteTxt+'</div>';
+  }
+  var meta = isMovie
+    ? ('🎬 导演：'+(d.director||'—')+(d.genre?' · 类型：'+d.genre:''))
+    : ('🎬 导演/制作：'+(d.team||'—'));
+  html += '<div class="modal-note" style="background:#eef2ff;border-left-color:#6366f1">'+meta+'</div>';
+
+  html += '</div></div></div>';
+
+  var wrapper = document.createElement('div');
+  wrapper.id = 'detailModal';
+  wrapper.innerHTML = html;
+  document.body.appendChild(wrapper);
 }
 
 function doSearch(){
