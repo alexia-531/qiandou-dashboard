@@ -816,7 +816,7 @@ function showDetail(idx, type){
 
 function renderDetail(d, rank, isAiring, isMovie, isUpcoming){
   var poster = d.poster||'';
-  var hasPoster = poster.indexOf('http')===0 || poster.indexOf('./')===0;
+  var hasPoster = !!poster;
   var v1Cls='mm-val', v1Val='—', v2Val='—';
   if(isAiring){
     if(d.heat>0){v1Cls+=' up'; v1Val=d.heat.toFixed(1)+'%';}
