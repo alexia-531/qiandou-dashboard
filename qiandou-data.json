@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-10 14:17",
+  "updateTime": "2026-07-10 14:37",
   "dramas": [
     {
       "name": "灿如繁星",
@@ -8,7 +8,7 @@
       "status": "已定档/已播出",
       "platform": "爱奇艺",
       "infoType": "定档/上线",
-      "remarks": "青春燃愈爱情剧；2026.7.5开播",
+      "remarks": "青春燃愈爱情剧 📅定档2026-07-05",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -19,7 +19,7 @@
       "status": "已定档/已播出",
       "platform": "腾讯视频",
       "infoType": "定档/上线",
-      "remarks": "7/5开播;更至10集;民国探案;杨磊导演",
+      "remarks": "更至10集;民国探案;杨磊导演 📅定档2026-07-05",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -30,7 +30,7 @@
       "status": "26/7/9 播出",
       "platform": "腾讯",
       "infoType": "定档/上线",
-      "remarks": "7/9开播首日;36集;腾讯18:00独播;预约300万+",
+      "remarks": "36集;腾讯18:00独播;预约300万+ 📅定档2026-07-09",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -41,7 +41,7 @@
       "status": "26/7/3 开播",
       "platform": "CCTV8/优酷/咪咕",
       "infoType": "定档/上线",
-      "remarks": "导演算（老算）；央视写实刑侦年代罪案；2026.7.3开播",
+      "remarks": "导演算（老算）；央视写实刑侦年代罪案 📅定档2026-07-03",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -52,7 +52,7 @@
       "status": "26/7/5 开播",
       "platform": "湖南卫视/芒果TV",
       "infoType": "已定档/已播出",
-      "remarks": "7/5开播;更至10集;湖南卫视+芒果TV;热度日冠",
+      "remarks": "更至10集;湖南卫视+芒果TV;热度日冠 📅定档2026-07-05",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -63,7 +63,7 @@
       "status": "26/7/3 播出",
       "platform": "爱奇艺",
       "infoType": "已定档/已播出",
-      "remarks": "刑侦悬疑剧；25集；2026.7.3爱奇艺独播",
+      "remarks": "刑侦悬疑剧；25集；2026.7.3爱奇艺独播 📅定档2026-07-03",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -74,7 +74,7 @@
       "status": "定档26/7/11",
       "platform": "爱奇艺",
       "infoType": "已定档/待播",
-      "remarks": "古装权谋爱情剧；28集；定档7.11爱奇艺独播；暑期档",
+      "remarks": "古装权谋爱情剧；28集；爱奇艺独播；暑期档 📅定档2026-07-11",
       "category": "播出/定档",
       "airStatus": "upcoming"
     },
@@ -85,7 +85,7 @@
       "status": "定档26/7/26",
       "platform": "湖南卫视/芒果TV",
       "infoType": "已定档/待播",
-      "remarks": "古装权谋剧；36集；定档7.26湖南卫视+芒果TV",
+      "remarks": "古装权谋剧；36集；湖南卫视+芒果TV 📅定档2026-07-26",
       "category": "播出/定档",
       "airStatus": "upcoming"
     },
@@ -305,7 +305,7 @@
       "status": "26/6/1杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-01",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -316,7 +316,7 @@
       "status": "26/6/10 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-10",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -327,7 +327,7 @@
       "status": "26/6/11 杀青",
       "platform": "",
       "infoType": "杀青",
-      "remarks": "央视片单",
+      "remarks": "央视片单 📅杀青2026-06-11",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -338,7 +338,7 @@
       "status": "26/6/11 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-11",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -349,7 +349,7 @@
       "status": "26/6/18 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-18",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -360,7 +360,7 @@
       "status": "26/6/19 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-19",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -371,7 +371,7 @@
       "status": "26/6/23 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-23",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -382,7 +382,7 @@
       "status": "26/6/23 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-06-23",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -393,7 +393,7 @@
       "status": "26/5/9 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "民国谍战剧；导演丁黑，编剧王倦；监制陈道明",
+      "remarks": "民国谍战剧；导演丁黑，编剧王倦；监制陈道明 📅杀青2026-05-09",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -404,7 +404,7 @@
       "status": "26/5/18 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-05-18",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -415,7 +415,7 @@
       "status": "26/5/20 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-05-20",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -426,7 +426,7 @@
       "status": "26/5/25 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-05-25",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -437,7 +437,7 @@
       "status": "26/5/26 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "原著：《九姑娘她一身反骨人还狂》",
+      "remarks": "原著：《九姑娘她一身反骨人还狂》 📅杀青2026-05-26",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -448,7 +448,7 @@
       "status": "26/5/27 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-05-27",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -459,7 +459,7 @@
       "status": "26/4/3 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-04-03",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -470,7 +470,7 @@
       "status": "26/4/4 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-04-04",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -481,7 +481,7 @@
       "status": "26/4/7 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-04-07",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -492,7 +492,7 @@
       "status": "26/4/8 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-04-08",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -503,7 +503,7 @@
       "status": "26/4/20 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "改编自面北眉南的《嫡谋》",
+      "remarks": "改编自面北眉南的《嫡谋》 📅杀青2026-04-20",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -514,7 +514,7 @@
       "status": "26/4/27 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-04-27",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -525,7 +525,7 @@
       "status": "26/4/30 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-04-30",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -536,7 +536,7 @@
       "status": "26/3/10 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-03-10",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -547,7 +547,7 @@
       "status": "26/3/12 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-03-12",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -558,7 +558,7 @@
       "status": "26/3/11 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-03-11",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -569,7 +569,7 @@
       "status": "26/3/22 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-03-22",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -580,7 +580,7 @@
       "status": "26/03/23 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-03-23",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -591,7 +591,7 @@
       "status": "26/02/02 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-02",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -602,7 +602,7 @@
       "status": "26/02/02 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-02",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -613,7 +613,7 @@
       "status": "26/02/02 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-02",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -624,7 +624,7 @@
       "status": "26/02/03 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-03",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -635,7 +635,7 @@
       "status": "26/02/08 杀青",
       "platform": "芒果",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-08",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -646,7 +646,7 @@
       "status": "26/02/09 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-09",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -657,7 +657,7 @@
       "status": "26/02/10 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-10",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -668,7 +668,7 @@
       "status": "26/2/11 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-11",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -679,7 +679,7 @@
       "status": "26/2/12 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-12",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -690,7 +690,7 @@
       "status": "26/02/12 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-12",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -701,7 +701,7 @@
       "status": "26/02/13 杀青",
       "platform": "腾讯/央八",
       "infoType": "杀青",
-      "remarks": "单元剧",
+      "remarks": "单元剧 📅杀青2026-02-13",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -712,7 +712,7 @@
       "status": "26/02/20 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-20",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -723,7 +723,7 @@
       "status": "26/2/21 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-02-21",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -734,7 +734,7 @@
       "status": "26/01/05 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-01-05",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -745,7 +745,7 @@
       "status": "26/01/22 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2026-01-22",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -756,7 +756,7 @@
       "status": "25/12/01 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-12-01",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -767,7 +767,7 @@
       "status": "25/12/15 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-12-15",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -778,7 +778,7 @@
       "status": "25/12/26 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-12-26",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -789,7 +789,7 @@
       "status": "25/12/30 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-12-30",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -800,7 +800,7 @@
       "status": "25/12/30 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-12-30",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -811,7 +811,7 @@
       "status": "25/11/06 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-11-06",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -822,7 +822,7 @@
       "status": "25/11/11 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-11-11",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -833,7 +833,7 @@
       "status": "25/11/17  杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-11-17",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -844,7 +844,7 @@
       "status": "25/10/10 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-10-10",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -855,7 +855,7 @@
       "status": "25/10/23 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-10-23",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -866,7 +866,7 @@
       "status": "25/10/23 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-10-23",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -877,7 +877,7 @@
       "status": "25/09/07 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-07",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -888,7 +888,7 @@
       "status": "25/09/09 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-09",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -899,7 +899,7 @@
       "status": "25/09/17 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-17",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -910,7 +910,7 @@
       "status": "25/09/19 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-19",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -921,7 +921,7 @@
       "status": "25/09/20 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "换乘恋爱是真的？！",
+      "remarks": "换乘恋爱是真的？！ 📅杀青2025-09-20",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -932,7 +932,7 @@
       "status": "25/09/27 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-27",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -943,7 +943,7 @@
       "status": "25/09/28 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "老九门衍生；悬疑探案",
+      "remarks": "老九门衍生；悬疑探案 📅杀青2025-09-28",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -954,7 +954,7 @@
       "status": "25/09/29 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-29",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -965,7 +965,7 @@
       "status": "25/09/30 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-09-30",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -976,7 +976,7 @@
       "status": "25/08/16 杀青",
       "platform": "芒果TV",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-08-16",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -987,7 +987,7 @@
       "status": "25/08/16 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-08-16",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -998,7 +998,7 @@
       "status": "25/08/19 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "古装探案",
+      "remarks": "古装探案 📅杀青2025-08-19",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1009,7 +1009,7 @@
       "status": "25/08/20 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "年代法治大剧；导演李路（《人民的名义》）；36集",
+      "remarks": "年代法治大剧；导演李路（《人民的名义》）；36集 📅杀青2025-08-20",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1020,7 +1020,7 @@
       "status": "25/06/03 杀青",
       "platform": "",
       "infoType": "杀青",
-      "remarks": "心理流悬疑剧",
+      "remarks": "心理流悬疑剧 📅杀青2025-06-03",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1031,7 +1031,7 @@
       "status": "25/06/18 杀青",
       "platform": "央视",
       "infoType": "杀青",
-      "remarks": "抗战剧；导演杨振宇，编剧黄晖",
+      "remarks": "抗战剧；导演杨振宇，编剧黄晖 📅杀青2025-06-18",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1042,7 +1042,7 @@
       "status": "25/06/19 杀青",
       "platform": "腾讯/爱奇艺",
       "infoType": "杀青",
-      "remarks": "古装爱情；2026.5双网联播",
+      "remarks": "古装爱情；2026.5双网联播 📅杀青2025-06-19",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1053,7 +1053,7 @@
       "status": "25/05/30 杀青",
       "platform": "央视八套",
       "infoType": "杀青",
-      "remarks": "年代温情剧；关晓彤饰白化症少女",
+      "remarks": "年代温情剧；关晓彤饰白化症少女 📅杀青2025-05-30",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1064,7 +1064,7 @@
       "status": "25/04/03 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-04-03",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1075,7 +1075,7 @@
       "status": "25/04/14 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "古装",
+      "remarks": "古装 📅杀青2025-04-14",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1086,7 +1086,7 @@
       "status": "25/04/16 杀青",
       "platform": "芒果TV",
       "infoType": "杀青",
-      "remarks": "改编自亦舒《嘘》；导演刘俊杰",
+      "remarks": "改编自亦舒《嘘》；导演刘俊杰 📅杀青2025-04-16",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1097,7 +1097,7 @@
       "status": "25/04/16 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "税务犯罪剧；导演李路（《人民的名义》）",
+      "remarks": "税务犯罪剧；导演李路（《人民的名义》） 📅杀青2025-04-16",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1108,7 +1108,7 @@
       "status": "25/03/06 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-03-06",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1119,7 +1119,7 @@
       "status": "25/02/10 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "古装仙侠轻喜剧；改编自言归正传小说",
+      "remarks": "古装仙侠轻喜剧；改编自言归正传小说 📅杀青2025-02-10",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1130,7 +1130,7 @@
       "status": "25/02/18 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-02-18",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1141,7 +1141,7 @@
       "status": "25/01/17 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-01-17",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1152,7 +1152,7 @@
       "status": "25/01/18 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-01-18",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1163,7 +1163,7 @@
       "status": "25/01/24 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "《云襄传》续集；已杀青",
+      "remarks": "《云襄传》续集；已杀青 📅杀青2025-01-24",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1174,7 +1174,7 @@
       "status": "25/01/27 杀青",
       "platform": "芒果tv",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2025-01-27",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1185,7 +1185,7 @@
       "status": "24/12/30 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2024-12-30",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1196,7 +1196,7 @@
       "status": "24/11/29 杀青",
       "platform": "优酷",
       "infoType": "杀青",
-      "remarks": "民国言情；郭敬明监制",
+      "remarks": "民国言情；郭敬明监制 📅杀青2024-11-29",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1218,7 +1218,7 @@
       "status": "24/12/16 杀青",
       "platform": "爱奇艺",
       "infoType": "杀青",
-      "remarks": "",
+      "remarks": "📅杀青2024-12-16",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1240,7 +1240,7 @@
       "status": "拍摄中 26/7/1 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-07-01",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1251,7 +1251,7 @@
       "status": "拍摄中 26/7/3 开机",
       "platform": "优酷",
       "infoType": "拍摄/开机",
-      "remarks": "张译主演",
+      "remarks": "张译主演 📅开拍2026-07-03",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1262,7 +1262,7 @@
       "status": "拍摄中 26/6/1 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-06-01",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1273,7 +1273,7 @@
       "status": "拍摄中 26/6/2 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-06-02",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1284,7 +1284,7 @@
       "status": "拍摄中 26/6/2 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-06-02",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1295,7 +1295,7 @@
       "status": "拍摄中 26/6/3 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "古装仙侠；2026.6开机",
+      "remarks": "古装仙侠；2026.6开机 📅开拍2026-06-03",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1306,7 +1306,7 @@
       "status": "拍摄中 26/6/10 开机",
       "platform": "芒果tv",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-06-10",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1317,7 +1317,7 @@
       "status": "拍摄中 26/6/23 开机",
       "platform": "",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-06-23",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1328,7 +1328,7 @@
       "status": "拍摄中 26/6/28 开机",
       "platform": "优酷",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-06-28",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1339,7 +1339,7 @@
       "status": "拍摄中 26/5/2 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-02",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1350,7 +1350,7 @@
       "status": "拍摄中 26/5/6 开机",
       "platform": "",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-06",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1361,7 +1361,7 @@
       "status": "拍摄中 26/5/8 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "无限流暗黑奇幻；改编自同名小说",
+      "remarks": "无限流暗黑奇幻；改编自同名小说 📅开拍2026-05-08",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1372,7 +1372,7 @@
       "status": "拍摄中 26/5/10 开机",
       "platform": "优酷",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-10",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1383,7 +1383,7 @@
       "status": "拍摄中 26/5/10 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-10",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1394,7 +1394,7 @@
       "status": "拍摄中 26/5/14 开机",
       "platform": "",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-14",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1405,7 +1405,7 @@
       "status": "拍摄中 26/5/16 开机",
       "platform": "优酷",
       "infoType": "拍摄/开机",
-      "remarks": "改编自同名小说；演员阵容待确认",
+      "remarks": "改编自同名小说；演员阵容待确认 📅开拍2026-05-16",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1416,7 +1416,7 @@
       "status": "拍摄中 26/5/21 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-21",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1427,7 +1427,7 @@
       "status": "拍摄中 26/5/26 开机",
       "platform": "",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-26",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1438,7 +1438,7 @@
       "status": "拍摄中 26/5/27 开机",
       "platform": "芒果tv",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-27",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1449,7 +1449,7 @@
       "status": "拍摄中 26/5/27 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "快穿题材；2026.5横店开机",
+      "remarks": "快穿题材；2026.5横店开机 📅开拍2026-05-27",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1460,7 +1460,7 @@
       "status": "拍摄中 26/5/28 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-05-28",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1471,7 +1471,7 @@
       "status": "拍摄中 26/04/10 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-04-10",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1482,7 +1482,7 @@
       "status": "拍摄中 26/04/14 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-04-14",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1493,7 +1493,7 @@
       "status": "拍摄中 26/3/24 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-03-24",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1504,7 +1504,7 @@
       "status": "拍摄中 26/2/20 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2026-02-20",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1515,7 +1515,7 @@
       "status": "拍摄中 25/11/10 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2025-11-10",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1526,7 +1526,7 @@
       "status": "拍摄中 25/5/8 开机",
       "platform": "腾讯",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2025-05-08",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1537,7 +1537,7 @@
       "status": "拍摄中 24/09/15 开机",
       "platform": "爱奇艺",
       "infoType": "拍摄/开机",
-      "remarks": "",
+      "remarks": "📅开拍2024-09-15",
       "category": "拍摄中",
       "airStatus": null
     },
@@ -1645,7 +1645,8 @@
       "date": "2025-07-25（已上映）",
       "actors": "大鹏 / 刘德华 / 杨幂 / 白客 / 张若昀 / 庄达菲 / 林更新 / 宋小宝",
       "genre": "剧情 / 喜剧 / 古装",
-      "director": "大鹏"
+      "director": "大鹏",
+      "remarks": "📅上映2025-07-25"
     },
     {
       "name": "群星闪耀时",
@@ -1853,7 +1854,8 @@
       "date": "7月10日上映",
       "actors": "",
       "genre": "动画 / 历史",
-      "director": "追光动画"
+      "director": "追光动画",
+      "remarks": "📅上映2026-07-10"
     }
   ],
   "stats": {
