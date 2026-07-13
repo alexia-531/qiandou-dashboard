@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-13 13:09 CST（自动更新）",
+  "updateTime": "2026-07-13 14:17 CST（自动更新）",
   "dramas": [
     {
       "name": "灿如繁星",
@@ -9,17 +9,6 @@
       "platform": "爱奇艺",
       "infoType": "定档/上线",
       "remarks": "青春燃愈爱情剧 📅定档2026-07-05",
-      "category": "播出/定档",
-      "airStatus": "airing"
-    },
-    {
-      "name": "京城奇探",
-      "actors": "马思超 / 翟子路 / 王鹤润 / 春夏 / 陈意涵 / 范湉湉",
-      "team": "杨磊",
-      "status": "已定档/已播出",
-      "platform": "腾讯视频",
-      "infoType": "定档/上线",
-      "remarks": "更至10集;民国探案;杨磊导演 📅定档2026-07-05",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -53,17 +42,6 @@
       "platform": "湖南卫视/芒果TV",
       "infoType": "已定档/已播出",
       "remarks": "更至10集;湖南卫视+芒果TV;热度日冠 📅定档2026-07-05",
-      "category": "播出/定档",
-      "airStatus": "airing"
-    },
-    {
-      "name": "暗金",
-      "actors": "邓超元 / 郑中玉 / 匡牧野 / 张腾 / 钟晨瑶 / 徐永革",
-      "team": "王洋/武潼",
-      "status": "26/7/3 播出",
-      "platform": "爱奇艺",
-      "infoType": "已定档/已播出",
-      "remarks": "刑侦悬疑剧；25集；2026.7.3爱奇艺独播 📅定档2026-07-03",
       "category": "播出/定档",
       "airStatus": "airing"
     },
@@ -1908,16 +1886,16 @@
   ],
   "stats": {
     "categories": {
-      "播出/定档": 12,
+      "播出/定档": 10,
       "已下证待播": 17,
       "已杀青待播": 87,
       "拍摄中": 27,
       "拍摄中（暂停/待补）": 1,
       "待播": 8
     },
-    "totalDramas": 152,
+    "totalDramas": 150,
     "totalMovies": 28,
-    "totalAll": 180,
+    "totalAll": 178,
     "platforms": {
       "爱奇艺": 54,
       "腾讯": 41,
