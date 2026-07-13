@@ -430,6 +430,16 @@ body{
 .art-bar-v{width:22px;color:#334155;font-weight:700;text-align:left}
 .art-star-why{font-size:12.5px;color:#475569;line-height:1.65;margin-bottom:6px}
 .art-star-data{font-size:12px;color:#64748b;line-height:1.6;background:#f8fafc;border-left:3px solid var(--accent);padding:7px 10px;border-radius:0 8px 8px 0}
+.art-star-score{width:52px;flex-shrink:0;text-align:center;align-self:center;font-weight:900;font-size:21px;color:#5b6af0;line-height:1}
+.art-star-score span{display:block;font-size:10px;color:#94a3b8;font-weight:600;margin-top:3px}
+.art-legend{background:#f7f8fc;border:1px solid #e8ebf2;border-radius:10px;padding:10px 14px;margin-bottom:14px}
+.art-legend summary{cursor:pointer;font-size:13px;font-weight:800;color:#334155;outline:none}
+.art-legend-body{margin-top:10px}
+.art-legend-body p{font-size:12px;color:#475569;line-height:1.7;margin:0 0 8px}
+.art-legend .tbl{width:100%;border-collapse:collapse;font-size:11.5px;margin-bottom:6px}
+.art-legend .tbl th,.art-legend .tbl td{border:1px solid #e2e6ee;padding:5px 7px;text-align:left;vertical-align:top}
+.art-legend .tbl th{background:#eef1f7;color:#334155;font-weight:700}
+@media(max-width:680px){.art-star-score{width:42px;font-size:18px}}
 
 </style>
 </head>
@@ -510,7 +520,7 @@ body{
 <div id="modArtist" class="mod-pane" style="display:none">
 <!-- ═════════ 艺人爆火潜力评估 ═════════ -->
 <div class="lb-wrap" id="artistArea">
-  <div class="lb-header"><h3>🌟 艺人爆火潜力评估体系</h3><div class="lb-meta"><span class="dot"></span>不看静态粉丝总量，看「脱水增长率·路人渗透·角色绑定·多平台协同·粉丝质量·后续资源·舆论正负占比」7 大指标 · 片方/品牌参照 艾漫 / 云合 / 灯塔 / 百度指数 / 平台后台脱水数据</div></div>
+  <div class="lb-header"><h3>🌟 艺人爆火潜力评估体系</h3><div class="lb-meta"><span class="dot"></span>两层模型：7 大指标（脱水增长率·路人渗透·角色绑定·多平台协同·粉丝质量·后续资源·舆论正负占比）→ 6 大维度（作品实绩·全平台社交脱水热度·粉丝质量·舆论口碑·商务资源·长期走势）→ 加权总排名 · 数据参照 艾漫/云合/灯塔/百度指数/平台后台脱水数据</div></div>
 
   <!-- 7 核心指标 -->
   <div class="art-7">
@@ -724,90 +734,348 @@ body{
 </div>
 
 <div class="art-stars">
-  <h4>🏆 当前最有可能爆火的明星榜</h4>
-  <div class="art-star-note">以下结合「7 大指标 / 6 类维度」，综合研判<b>在播剧主创</b>与<b>具备 S+ 剧集合作的待播 / 高热艺人</b>（不限于在播热度榜演员）。数据来自云合、猫眼、灯塔、抖音、微博、百度指数等公开报道与公开轨迹（截至 2026-07-10），非实时后台脱水数据，仅供方法演示，不代表绝对结论；标注「示意」的条目为基于公开轨迹的示例研判。</div>
-  <div class="art-star">
-    <div class="art-star-rank">1</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">孟子义</span><span class="art-v-good">✅ 真潜力（多平台同步上涨）</span></div>
-      <div class="art-star-work">🎬 《百花杀》沈汐和（一人分饰两角·昭宁郡主）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:88%"></span></span><span class="art-bar-v">88</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:78%"></span></span><span class="art-bar-v">78</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>《百花杀》开播即爆，角色热度 18 分钟破亿、全网话题阅读超 23 亿；百度指数一夜从不足 4000 破万，业内评价"不是粉丝能刷出来的量级，是实打实的路人盘"；抖音"扇巴掌"切片 12 小时自然揽 30 万赞（无平台二创扶持）；预约单日净增约 110 万来自#孟子义回复#话题引流。符合"真潜力"黄金法则：抖音路人爆火→微博发酵→百度指数上涨同步发生。</div>
-      <div class="art-star-data"><b>依据数据：</b>云合/猫眼登顶 · 站内热度破 24000 · 百度指数破万 · 微指破 5000 万 · 招商 6 广 · 豆瓣开分 9.6</div>
-    </div>
+  <h4>🏆 最有可能爆火的明星榜（7指标→6维度→总排名 · Top30）</h4>
+  <div class="art-star-note">以下为基于「剧集汇总」全量主演（共 646 人）的<b>两层数据驱动</b>榜单（截至 2026-07-13）：先按 7 大指标打分，再聚合为 <b>6 大维度</b>（作品实绩25%·长期走势20%·全平台社交脱水热度15%·舆论口碑15%·商务资源15%·粉丝质量10%），加权得到<b>综合分</b>总排名。标 ✅/⚠️/🔍 为联网核查项（有据可查）；其余为结构化数据代理分。非实时脱水数据，不代表绝对结论。<b>点上方「数据口径说明」查看每个指标/维度背后用什么数据。</b></div>
+  <details class="art-legend">
+  <summary>📊 数据口径说明（每个指标/维度背后用什么数据判断）</summary>
+  <div class="art-legend-body">
+    <p><b>模型：</b>7 大底层指标（脱水增长率·路人渗透·角色绑定·多平台协同·粉丝质量·后续资源·舆论正负占比）→ 聚合为 6 大维度 → 加权总排名。权重：作品实绩 25% · 长期走势 20% · 全平台社交脱水热度 15% · 舆论口碑 15% · 商务资源 15% · 粉丝质量 10%。</p>
+    <p><b>数据来源：</b>标 ✅/⚠️/🔍 为<b>联网核查</b>项（百度指数/云合/豆瓣/招商披露，2026-07-13）；其余为「剧集汇总」结构化数据<b>代理分</b>（项目数/番位/平台/在播云合%，主演加权配角×0.35），非实时脱水数据。</p>
+    <table class="tbl"><tr><th>指标</th><th>判断数据</th></tr><tr><td><b>脱水增长率</b></td><td>判断数据：在播剧云合正片市占率周增幅、待播项目数(结构化代理)。理想实时数据：百度指数脱水增长率、云合周环比、微博话题阅读增长斜率、抖音/B站播放增长曲线。</td></tr><tr><td><b>路人渗透</b></td><td>判断数据：在播剧云合市占率(非粉丝观看主力)、百度指数脱水绝对量(结构化代理)。理想实时数据：百度指数绝对脱水值、云合正片市占率、微博自然讨论占比(剔除粉圈团建)、路人二创。</td></tr><tr><td><b>角色绑定</b></td><td>判断数据：是否主演在播/待播、在播剧云合市占率(主演拿满/配角×0.35)。理想实时数据：角色名百度指数 vs 演员名、角色出圈名场面/台词传播量、角色话题占演员总话题比。</td></tr><tr><td><b>多平台协同</b></td><td>判断数据：覆盖平台数(微博/抖音/小红书/B站/百度)、是否台网双爆(在播一线+多待播)。理想实时数据：各平台热度一致性、跨平台联动话题数、台网双爆判定。</td></tr><tr><td><b>粉丝质量</b></td><td>判断数据：主演次数、总作品数、在播热度(结构化代理)。理想实时数据：超话签到率/粉丝活跃度、脱粉率/净增、自然增长 vs 氪金做数据、粉圈健康度。</td></tr><tr><td><b>后续资源</b></td><td>判断数据：待播项目数、顶层平台(S/一线)占比、待播主演次数(结构化)。理想实时数据：已定待播S+项目数、平台定级/番位、剧本分量(大导/大IP)、商务储备。</td></tr><tr><td><b>舆论正负占比</b></td><td>判断数据：在播/待播状态基线分(结构化)。理想实时数据：豆瓣评分及评分人数、舆情正负比、黑料/争议占比、营销号 vs 自然讨论比。</td></tr></table>
+    <table class="tbl" style="margin-top:8px"><tr><th>维度</th><th>权重</th><th>聚合指标/直接数据</th><th>数据源</th></tr><tr><td><b>作品实绩</b></td><td>25%</td><td>角色绑定 + 作品数/番位/S+占比/云合正片表现</td><td>聚合指标=角色绑定。直接数据：在播/待播/已播作品数、主演番位、平台S+占比、云合/骨朵正片表现。数据源：qiandou-data 项目表、云合市占率、骨朵热度。</td></tr><tr><td><b>全平台社交脱水热度</b></td><td>15%</td><td>多平台协同 + 路人渗透 + 云合市占率/骨朵热度</td><td>聚合指标=多平台协同+路人渗透。直接数据：覆盖平台数、台网双爆、云合/骨朵。数据源：百度指数脱水、微博话题阅读、抖音/B站播放、云合正片市占。</td></tr><tr><td><b>粉丝质量数据</b></td><td>10%</td><td>粉丝质量 + 超话活跃/脱粉率/自然增长</td><td>聚合指标=粉丝质量。直接数据：主演次数/总作品数(结构化代理)。数据源：超话签到、粉丝画像、脱粉监测。</td></tr><tr><td><b>舆论口碑占比</b></td><td>15%</td><td>舆论正负占比 + 豆瓣评分/舆情正负比</td><td>聚合指标=舆论正负占比。直接数据：在播/待播基线。数据源：豆瓣、舆情监测、黑料库。</td></tr><tr><td><b>商务资源变化</b></td><td>15%</td><td>后续资源 + 代言新增/流失/招商金额/报价</td><td>聚合指标=后续资源。直接数据：待播S+项目数/平台定级。数据源：代言数据库、招商披露金额、商务报价变化。</td></tr><tr><td><b>长期走势(增长率>瞬时)</b></td><td>20%</td><td>脱水增长率 + 云合周环比/百度指数增长率</td><td>聚合指标=脱水增长率。直接数据：在播云合市占率周增幅趋势(结构化代理)。数据源：百度指数增长率、云合周环比、话题增长斜率、长尾能力。</td></tr></table>
   </div>
-  <div class="art-star">
-    <div class="art-star-rank">2</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">白鹿</span><span class="art-v-good">✅ 真潜力（国民级路人盘）</span></div>
-      <div class="art-star-work">🎬 S+ 古装 / 现偶多线领跑（临江仙 · 北上 等）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:90%"></span></span><span class="art-bar-v">90</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:82%"></span></span><span class="art-bar-v">82</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:90%"></span></span><span class="art-bar-v">90</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:88%"></span></span><span class="art-bar-v">88</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>多部 S+ 剧集接连出圈，古装与现偶双线领跑，路人盘广至国民级；跨年晚会、红毯、综艺自然出圈，非单平台买量堆出的假热度；商务代言断层领先，长期走势稳定向上。符合"真潜力"黄金法则：作品出圈→多平台自然发酵→商业价值同步抬升。</div>
-      <div class="art-star-data"><b>依据数据（示意）：</b>多部 S+ 领跑 · 商务代言断层 · 国民级路人盘 · 红毯/晚会自然出圈</div>
-    </div>
-  </div>
-  <div class="art-star">
-    <div class="art-star-rank">3</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">宋威龙</span><span class="art-v-good">✅ 真潜力（扛剧能力验证）</span></div>
-      <div class="art-star-work">🎬 《野狗骨头》陈异（糙汉造型·去偶像包袱）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:88%"></span></span><span class="art-bar-v">88</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:78%"></span></span><span class="art-bar-v">78</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:75%"></span></span><span class="art-bar-v">75</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:72%"></span></span><span class="art-bar-v">72</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:82%"></span></span><span class="art-bar-v">82</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>《野狗骨头》云合市占率 12.8% 逆袭登顶日冠、省级卫视四连冠；全平台预约破 520 万刷新芒果TV现偶纪录；酷云角色热度榜陈异排第二（仅次于虞书欣林晚星），角色绑定成立。豆瓣开分 8.5 且 V 型反转，口碑沉淀好。注意：部分观众指男主演技拉扯戏份表现力不足，舆论非纯正面。</div>
-      <div class="art-star-data"><b>依据数据：</b>云合 12.8% 日冠 · 酷云四连冠 · 预约 520 万 · 豆瓣 8.5 · 首日播放 7139 万 · 开局 5 广</div>
-    </div>
-  </div>
-  <div class="art-star">
-    <div class="art-star-rank">4</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">王鹤棣</span><span class="art-v-good">✅ 真潜力（苏感路人缘）</span></div>
-      <div class="art-star-work">🎬 S+ 古装 / 现偶扛剧（苍兰诀系出圈）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:86%"></span></span><span class="art-bar-v">86</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:76%"></span></span><span class="art-bar-v">76</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:84%"></span></span><span class="art-bar-v">84</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:82%"></span></span><span class="art-bar-v">82</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>凭高国民度 S+ 古装现偶建立强路人缘，"苏感"标签跨圈层破壁；商务资源稳增。但部分剧目口碑分化，需靠下一部作品巩固"扛剧"结论，警惕单靠人设热度。</div>
-      <div class="art-star-data"><b>依据数据（示意）：</b>S+ 古装现偶领跑 · 强路人缘 · 商务稳增</div>
-    </div>
-  </div>
-  <div class="art-star">
-    <div class="art-star-rank">5</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">虞书欣</span><span class="art-v-warn">⚠️ 高开但需观察（注水争议）</span></div>
-      <div class="art-star-work">🎬 《灿如繁星》林晚星（角色热度登顶）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:82%"></span></span><span class="art-bar-v">82</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:55%"></span></span><span class="art-bar-v">55</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:60%"></span></span><span class="art-bar-v">60</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:72%"></span></span><span class="art-bar-v">72</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:58%"></span></span><span class="art-bar-v">58</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>《灿如繁星》创爱奇艺近五年现偶首日热度纪录（7433）、林晚星角色热度登顶（抖音 74.5 / 站内 186 万），开局极强。但出现典型"假热度"风险信号：百度指数次日"跳崖式下跌"、粉丝被指发动手动搜索拉升百指（分城数据被疑异常）；开播后站内热度横盘微降、口碑两极（演技争议）；招商仅 2 广。需观察后续是否靠作品而非运维持续。</div>
-      <div class="art-star-data"><b>依据数据：</b>爱奇艺首日 7433 · 林晚星角色登顶 · 百度指数峰值 1.4 万后跳水 · 云包场 45 万 · 招商 2 广</div>
-    </div>
-  </div>
-  <div class="art-star">
-    <div class="art-star-rank">6</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">赵今麦</span><span class="art-v-wait">🔍 待验证（国民转型上升期）</span></div>
-      <div class="art-star-work">🎬 待播 S+ 古装 / 正剧多线（童星国民度转型）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:72%"></span></span><span class="art-bar-v">72</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:78%"></span></span><span class="art-bar-v">78</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:68%"></span></span><span class="art-bar-v">68</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:75%"></span></span><span class="art-bar-v">75</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>童星出道国民度极高，待播多部 S+ 正剧/古装，演技认可度高、路人好感强；能否借待播大剧完成"国民童星 → 一线主角"跃迁仍待验证，属于高确定性上升股。</div>
-      <div class="art-star-data"><b>依据数据（示意）：</b>国民度童星 · 待播 S+ 多线 · 演技认可高</div>
-    </div>
-  </div>
-  <div class="art-star">
-    <div class="art-star-rank">7</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">田曦薇</span><span class="art-v-wait">🔍 待验证（灵动上升期）</span></div>
-      <div class="art-star-work">🎬 待播 S+ 古装（灵动路人缘）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:72%"></span></span><span class="art-bar-v">72</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:72%"></span></span><span class="art-bar-v">72</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:74%"></span></span><span class="art-bar-v">74</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>凭灵动人设与古装适配度快速积累路人缘，待播 S+ 古装若能爆，有望进入一线候选；目前作品实绩仍需一部"扛剧"验证，属高弹性上升股。</div>
-      <div class="art-star-data"><b>依据数据（示意）：</b>灵动路人缘 · 待播 S+ 古装 · 上升期</div>
-    </div>
-  </div>
-  <div class="art-star">
-    <div class="art-star-rank">8</div>
-    <div class="art-star-main">
-      <div class="art-star-head"><span class="art-star-name">翟子路</span><span class="art-v-wait">🔍 待验证（破圈联动型）</span></div>
-      <div class="art-star-work">🎬 《京城奇探》赵少商（民国贵公子·演技获认可）</div>
-      <div class="art-bars"><div class="art-bar"><span class="art-bar-l">作品实绩</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">社交脱水</span><span class="art-bar-track"><span class="art-bar-fill" style="width:68%"></span></span><span class="art-bar-v">68</span></div><div class="art-bar"><span class="art-bar-l">粉丝质量</span><span class="art-bar-track"><span class="art-bar-fill" style="width:65%"></span></span><span class="art-bar-v">65</span></div><div class="art-bar"><span class="art-bar-l">舆论口碑</span><span class="art-bar-track"><span class="art-bar-fill" style="width:75%"></span></span><span class="art-bar-v">75</span></div><div class="art-bar"><span class="art-bar-l">商务资源</span><span class="art-bar-track"><span class="art-bar-fill" style="width:60%"></span></span><span class="art-bar-v">60</span></div><div class="art-bar"><span class="art-bar-l">长期走势</span><span class="art-bar-track"><span class="art-bar-fill" style="width:62%"></span></span><span class="art-bar-v">62</span></div></div>
-      <div class="art-star-why"><b>为什么：</b>凭白鹿一条"谢谢鹿鹿"评论引爆 2.3 亿热搜，预约 1 小时涨 17.6%、开播 1 小时实时热度 16000 冲悬疑榜首；站内热度稳 22000+、豆瓣 7.8，演技获 92% 观众认可。但首波流量主要来自好友联动（首播新增 42% 来自白鹿粉丝），属"破圈联动"而非自身路人盘沉淀，长期走势取决于能否转化为自有粉丝与长尾留存。</div>
-      <div class="art-star-data"><b>依据数据：</b>白鹿联动 2.3 亿热搜 · 预约+17.6% · 站内 22000+ · 豆瓣 7.8 · 演技认可 92%</div>
-    </div>
+</details>
+<div class="art-star">
+  <div class="art-star-rank">1</div>
+  <div class="art-star-score">92.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">张婧仪</span><span class="art-v-good">✅ 真潜力（收视破纪录·口碑V型·路人好感'长大了'）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 4 · 总作品 6 · 主演 6 次 · 覆盖 5 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:84%"></span></span><span class="art-bar-v">84</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:93%"></span></span><span class="art-bar-v">93</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:94%"></span></span><span class="art-bar-v">94</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:94%"></span></span><span class="art-bar-v">94</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《野狗骨头》省级卫视收视破0.66创年度纪录、云合登顶、'捡垃圾'梗自然出圈、路人好感高。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈11.5%) · 待播 4 · 总作品 6 · 主演 6 次 · 覆盖 5 平台 · 顶层平台 S/一线</div>
   </div>
 </div>
-</div><!-- /modArtist -->
+<div class="art-star">
+  <div class="art-star-rank">2</div>
+  <div class="art-star-score">91.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">孟子义</span><span class="art-v-good">✅ 真潜力（多平台同步·角色热度18分钟破亿·路人盘实打实）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 3 · 总作品 5 · 主演 5 次 · 覆盖 1 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:94%"></span></span><span class="art-bar-v">94</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:75%"></span></span><span class="art-bar-v">75</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:91%"></span></span><span class="art-bar-v">91</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《百花杀》云合16.2%登顶、百度指数破万、站内27529、招商6广；抖音扇巴掌切片自然爆；但口碑分化+广告流失争议。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈16.0%) · 待播 3 · 总作品 5 · 主演 5 次 · 覆盖 1 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">3</div>
+  <div class="art-star-score">90.6<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">何与</span><span class="art-v-good">✅ 真潜力（百度指数全剧演员首位·演技逆袭）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 2 · 总作品 3 · 主演 3 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:88%"></span></span><span class="art-bar-v">88</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:78%"></span></span><span class="art-bar-v">78</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:69%"></span></span><span class="art-bar-v">69</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:96%"></span></span><span class="art-bar-v">96</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《百花杀》个人百度指数稳居全剧演员首位、病娇太子出圈；但CP感两极分化、扛剧归属有争议。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈16.0%) · 待播 2 · 总作品 3 · 主演 3 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">4</div>
+  <div class="art-star-score">83.1<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">陈靖可</span><span class="art-v-warn">⚠️ 待观察（作品堆量·个人声量待破圈）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 6 · 总作品 7 · 主演 7 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:73%"></span></span><span class="art-bar-v">73</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:81%"></span></span><span class="art-bar-v">81</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:96%"></span></span><span class="art-bar-v">96</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:78%"></span></span><span class="art-bar-v">78</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:83%"></span></span><span class="art-bar-v">83</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《灿如繁星》男主+多部待播，但个人声量被虞书欣/作品覆盖，需下一部独立验证。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈9.2%) · 待播 6 · 总作品 7 · 主演 7 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">5</div>
+  <div class="art-star-score">72.1<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">任嘉伦</span><span class="art-v-good">✅ 真潜力（转型出圈·开播1h断层第一·豆瓣9.2）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 1 · 总作品 2 · 主演 2 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:79%"></span></span><span class="art-bar-v">79</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:80%"></span></span><span class="art-bar-v">80</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:47%"></span></span><span class="art-bar-v">47</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:69%"></span></span><span class="art-bar-v">69</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:87%"></span></span><span class="art-bar-v">87</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《深渊无间》开播1小时热度断层第一、预约破千万、完播率85%、豆瓣9.2、寸头硬汉转型出圈。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈4.0%) · 待播 1 · 总作品 2 · 主演 2 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">6</div>
+  <div class="art-star-score">71.6<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">宋威龙</span><span class="art-v-good">✅ 真潜力（台网双爆·云合日冠·豆瓣8.5 V型·自来水）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 0 · 总作品 1 · 主演 1 次 · 覆盖 1 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:87%"></span></span><span class="art-bar-v">87</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:50%"></span></span><span class="art-bar-v">50</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:94%"></span></span><span class="art-bar-v">94</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:22%"></span></span><span class="art-bar-v">22</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:88%"></span></span><span class="art-bar-v">88</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《野狗骨头》云合12.8-12.9%登顶、酷云收视破纪录0.66、芒果TV首日6200万破纪录、预约520万破现偶纪录、台网双爆、口碑V型反转。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈11.5%) · 待播 0 · 总作品 1 · 主演 1 次 · 覆盖 1 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">7</div>
+  <div class="art-star-score">64.5<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">王楚然</span><span class="art-v-good">✅ 真潜力（S+招商1.2亿·DIOR大使·资源断层）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 5 · 主演 5 次 · 覆盖 4 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:46%"></span></span><span class="art-bar-v">46</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:64%"></span></span><span class="art-bar-v">64</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:86%"></span></span><span class="art-bar-v">86</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:50%"></span></span><span class="art-bar-v">50</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《这一秒过火》已播(S+双平台·招商1.2亿·预约600万)；待播九门/烽影燃梅香/明月录/浮生；无考察期空降DIOR大使。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 5 · 主演 5 次 · 覆盖 4 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">8</div>
+  <div class="art-star-score">63.1<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">杨烁</span><span class="art-v-wait">🔍 实力派（刑侦正剧·口碑型）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 2 · 总作品 3 · 主演 1 次 · 覆盖 1 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:67%"></span></span><span class="art-bar-v">67</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:61%"></span></span><span class="art-bar-v">61</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:74%"></span></span><span class="art-bar-v">74</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:53%"></span></span><span class="art-bar-v">53</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:73%"></span></span><span class="art-bar-v">73</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《悬案》央视写实刑侦男主、实力派路线；爆火属性弱但口碑稳健、长尾好。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈7.0%) · 待播 2 · 总作品 3 · 主演 1 次 · 覆盖 1 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">9</div>
+  <div class="art-star-score">62.5<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">侯明昊</span><span class="art-v-warn">⚠️ 粉丝托底+慢热黑马</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 2 · 总作品 3 · 主演 3 次 · 覆盖 1 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:62%"></span></span><span class="art-bar-v">62</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:47%"></span></span><span class="art-bar-v">47</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:64%"></span></span><span class="art-bar-v">64</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:61%"></span></span><span class="art-bar-v">61</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:69%"></span></span><span class="art-bar-v">69</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《雀骨》零宣发空降站内破8500、角色热度破2亿、招商12广告位；但初期受众以粉丝为主、路人靠剧情慢热进场。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈7.3%) · 待播 2 · 总作品 3 · 主演 3 次 · 覆盖 1 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">10</div>
+  <div class="art-star-score">60.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">艾米</span><span class="art-v-warn">⚠️ 新人黑马（首次古偶女主获认可）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 2 · 总作品 4 · 主演 2 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:62%"></span></span><span class="art-bar-v">62</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:56%"></span></span><span class="art-bar-v">56</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:49%"></span></span><span class="art-bar-v">49</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:61%"></span></span><span class="art-bar-v">61</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:58%"></span></span><span class="art-bar-v">58</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《雀骨》女主获观众认可、灵动自然；但知名度待积累、路人盘尚浅。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈7.3%) · 待播 2 · 总作品 4 · 主演 2 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">11</div>
+  <div class="art-star-score">49.1<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">黄景瑜</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 5 · 主演 5 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 5 · 主演 5 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">12</div>
+  <div class="art-star-score">48.5<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">辛云来</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 3 · 总作品 4 · 主演 3 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:35%"></span></span><span class="art-bar-v">35</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:56%"></span></span><span class="art-bar-v">56</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:29%"></span></span><span class="art-bar-v">29</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:45%"></span></span><span class="art-bar-v">45</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈0.0%) · 待播 3 · 总作品 4 · 主演 3 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">13</div>
+  <div class="art-star-score">47.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">代露娃</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 5 · 主演 3 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:56%"></span></span><span class="art-bar-v">56</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 5 · 主演 3 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">14</div>
+  <div class="art-star-score">47.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">张云龙</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 5 · 主演 5 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:31%"></span></span><span class="art-bar-v">31</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:70%"></span></span><span class="art-bar-v">70</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 5 · 主演 5 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">15</div>
+  <div class="art-star-score">47.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">王子奇</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 3 · 总作品 4 · 主演 4 次 · 覆盖 4 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:48%"></span></span><span class="art-bar-v">48</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 3 · 总作品 4 · 主演 4 次 · 覆盖 4 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">16</div>
+  <div class="art-star-score">47.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">张新成</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">17</div>
+  <div class="art-star-score">47.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">张凌赫</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">18</div>
+  <div class="art-star-score">47.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">李一桐</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 4 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:31%"></span></span><span class="art-bar-v">31</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 4 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">19</div>
+  <div class="art-star-score">47.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">宋祖儿</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 4 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:31%"></span></span><span class="art-bar-v">31</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 4 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">20</div>
+  <div class="art-star-score">47.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">王星越</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 4 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:31%"></span></span><span class="art-bar-v">31</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 4 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">21</div>
+  <div class="art-star-score">47.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">田嘉瑞</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">22</div>
+  <div class="art-star-score">46.8<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">虞书欣</span><span class="art-v-warn">⚠️ 高开需观察（百指异常·粉黑博弈·真实路人盘存疑）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 2 · 总作品 5 · 主演 5 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:63%"></span></span><span class="art-bar-v">63</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:32%"></span></span><span class="art-bar-v">32</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:69%"></span></span><span class="art-bar-v">69</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:7%"></span></span><span class="art-bar-v">7</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:69%"></span></span><span class="art-bar-v">69</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:39%"></span></span><span class="art-bar-v">39</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>《灿如繁星》百指开播前仅2000、粉丝手动刷百指、分城数据异常疑注水10倍、粉黑博弈激烈。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈9.2%) · 待播 2 · 总作品 5 · 主演 5 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">23</div>
+  <div class="art-star-score">46.8<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">徐若晗</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 5 · 总作品 6 · 主演 5 次 · 覆盖 1 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:22%"></span></span><span class="art-bar-v">22</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:74%"></span></span><span class="art-bar-v">74</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 5 · 总作品 6 · 主演 5 次 · 覆盖 1 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">24</div>
+  <div class="art-star-score">46.7<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">胡先煦</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 3 · 总作品 5 · 主演 3 次 · 覆盖 4 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:48%"></span></span><span class="art-bar-v">48</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:56%"></span></span><span class="art-bar-v">56</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 3 · 总作品 5 · 主演 3 次 · 覆盖 4 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">25</div>
+  <div class="art-star-score">46.4<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">敖瑞鹏</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 3 · 总作品 4 · 主演 4 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:66%"></span></span><span class="art-bar-v">66</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 3 · 总作品 4 · 主演 4 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">26</div>
+  <div class="art-star-score">46.4<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">关晓彤</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 5 · 总作品 5 · 主演 2 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 5 · 总作品 5 · 主演 2 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">27</div>
+  <div class="art-star-score">46.3<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">陈哲远</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 3 · 总作品 4 · 主演 3 次 · 覆盖 4 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:48%"></span></span><span class="art-bar-v">48</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:85%"></span></span><span class="art-bar-v">85</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 3 · 总作品 4 · 主演 3 次 · 覆盖 4 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">28</div>
+  <div class="art-star-score">46.0<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">李沁</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 2 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:31%"></span></span><span class="art-bar-v">31</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:52%"></span></span><span class="art-bar-v">52</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 3 次 · 覆盖 2 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">29</div>
+  <div class="art-star-score">46.0<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">蓝盈莹</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 0 · 待播 4 · 总作品 4 · 主演 2 次 · 覆盖 3 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:36%"></span></span><span class="art-bar-v">36</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:40%"></span></span><span class="art-bar-v">40</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:39%"></span></span><span class="art-bar-v">39</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:43%"></span></span><span class="art-bar-v">43</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:100%"></span></span><span class="art-bar-v">100</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:28%"></span></span><span class="art-bar-v">28</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 0 部(云合≈0.0%) · 待播 4 · 总作品 4 · 主演 2 次 · 覆盖 3 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+<div class="art-star">
+  <div class="art-star-rank">30</div>
+  <div class="art-star-score">45.8<span>综合分</span></div>
+  <div class="art-star-main">
+    <div class="art-star-head"><span class="art-star-name">岳云鹏</span><span class="art-v-wait">代理分（未联网核查）</span></div>
+    <div class="art-star-work">🎬 在播 1 · 待播 0 · 总作品 1 · 主演 1 次 · 覆盖 1 平台</div>
+    <div class="art-bars" style="grid-template-columns:repeat(3,1fr)"><div class="art-bar"><span class="art-bar-l">作品</span><span class="art-bar-track"><span class="art-bar-fill" style="width:61%"></span></span><span class="art-bar-v">61</span></div><div class="art-bar"><span class="art-bar-l">全平</span><span class="art-bar-track"><span class="art-bar-fill" style="width:38%"></span></span><span class="art-bar-v">38</span></div><div class="art-bar"><span class="art-bar-l">粉丝</span><span class="art-bar-track"><span class="art-bar-fill" style="width:23%"></span></span><span class="art-bar-v">23</span></div><div class="art-bar"><span class="art-bar-l">舆论</span><span class="art-bar-track"><span class="art-bar-fill" style="width:60%"></span></span><span class="art-bar-v">60</span></div><div class="art-bar"><span class="art-bar-l">商务</span><span class="art-bar-track"><span class="art-bar-fill" style="width:17%"></span></span><span class="art-bar-v">17</span></div><div class="art-bar"><span class="art-bar-l">长期</span><span class="art-bar-track"><span class="art-bar-fill" style="width:56%"></span></span><span class="art-bar-v">56</span></div></div>
+    <div class="art-star-why"><b>为什么：</b>基于剧集汇总结构化数据的7指标代理评分，未做联网核查；仅作规模排序参考。</div>
+    <div class="art-star-data"><b>依据数据：</b>在播 1 部(云合≈7.0%) · 待播 0 · 总作品 1 · 主演 1 次 · 覆盖 1 平台 · 顶层平台 S/一线</div>
+  </div>
+</div>
+</div>
 
 <div class="ft">巧豆传媒水晶球数据动态系统 · 每日 09:00 CST 自动更新 · 数据源：广电备案 + 平台官微 + 行业媒体 + Vlinkage/猫眼/云合</div>
 
