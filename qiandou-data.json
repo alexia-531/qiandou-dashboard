@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-13 14:17 CST（自动更新）",
+  "updateTime": "2026-07-13 14:25 CST（自动更新）",
   "dramas": [
     {
       "name": "灿如繁星",
@@ -225,12 +225,12 @@
       "name": "深渊无间",
       "actors": "任嘉伦 / 秦俊杰 / 王阳 / 姜珮瑶 / 刘端端",
       "team": "刘璋牧",
-      "status": "待播·定档待核实",
+      "status": "26/7/10 开播",
       "platform": "爱奇艺",
       "infoType": "定档/上线",
       "remarks": "硬核刑侦剧；导演刘璋牧；7/10开播存疑，近期报道称预计8月，待核实",
-      "category": "待播",
-      "airStatus": "upcoming"
+      "category": "播出/定档",
+      "airStatus": "airing"
     },
     {
       "name": "折月亮",
@@ -1619,35 +1619,24 @@
       "airStatus": "airing"
     },
     {
-      "name": "问心2",
-      "actors": "赵又廷 / 毛晓彤 / 金世佳 / 陈冲 / 黄觉 / 张佳宁 / 周雨彤 / 李乃文",
+      "name": "暗金",
+      "actors": "邓超元/郑中玉/匡牧野/张腾/钟晨瑶/徐永革",
       "team": "",
-      "status": "26/7/13 开播",
-      "platform": "浙江卫视",
+      "status": "26/7/3 开播",
+      "platform": "爱奇艺",
       "infoType": "定档/上线",
-      "remarks": "医疗续作；浙江卫视开播；7/13首播 📅定档2026-07-13",
+      "remarks": "刑侦悬疑中剧 · 爱奇艺独播 · 中剧榜上榜",
       "category": "播出/定档",
       "airStatus": "airing"
     },
     {
-      "name": "我叫任非凡",
-      "actors": "吕昀峰 / 王俊笔 / 徐子琁",
-      "team": "",
-      "status": "26/7/13 开播",
+      "name": "京城奇探",
+      "actors": "马思超/翟子路/王鹤润/春夏/陈意涵/范湉湉",
+      "team": "杨磊",
+      "status": "26/7/5 开播",
       "platform": "腾讯视频",
       "infoType": "定档/上线",
-      "remarks": "复仇爱情；中医世家；7/13腾讯开播 📅定档2026-07-13",
-      "category": "播出/定档",
-      "airStatus": "airing"
-    },
-    {
-      "name": "牧野诡事之搬山秘术",
-      "actors": "王宇峰 / 张婉悦",
-      "team": "",
-      "status": "26/7/13 开播",
-      "platform": "腾讯视频",
-      "infoType": "定档/上线",
-      "remarks": "冒险动作悬疑；7/13腾讯开播 📅定档2026-07-13",
+      "remarks": "导演杨磊；民国探案中剧 · 单集<20min",
       "category": "播出/定档",
       "airStatus": "airing"
     }
@@ -1891,11 +1880,11 @@
       "已杀青待播": 87,
       "拍摄中": 27,
       "拍摄中（暂停/待补）": 1,
-      "待播": 8
+      "待播": 7
     },
-    "totalDramas": 150,
+    "totalDramas": 149,
     "totalMovies": 28,
-    "totalAll": 178,
+    "totalAll": 177,
     "platforms": {
       "爱奇艺": 54,
       "腾讯": 41,
