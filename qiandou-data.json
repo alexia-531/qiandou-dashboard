@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-13 14:25 CST（自动更新）",
+  "updateTime": "2026-07-13 14:35 CST（自动更新）",
   "dramas": [
     {
       "name": "灿如繁星",
@@ -1619,17 +1619,6 @@
       "airStatus": "airing"
     },
     {
-      "name": "暗金",
-      "actors": "邓超元/郑中玉/匡牧野/张腾/钟晨瑶/徐永革",
-      "team": "",
-      "status": "26/7/3 开播",
-      "platform": "爱奇艺",
-      "infoType": "定档/上线",
-      "remarks": "刑侦悬疑中剧 · 爱奇艺独播 · 中剧榜上榜",
-      "category": "播出/定档",
-      "airStatus": "airing"
-    },
-    {
       "name": "京城奇探",
       "actors": "马思超/翟子路/王鹤润/春夏/陈意涵/范湉湉",
       "team": "杨磊",
@@ -1875,16 +1864,16 @@
   ],
   "stats": {
     "categories": {
-      "播出/定档": 10,
+      "播出/定档": 9,
       "已下证待播": 17,
       "已杀青待播": 87,
       "拍摄中": 27,
       "拍摄中（暂停/待补）": 1,
       "待播": 7
     },
-    "totalDramas": 149,
+    "totalDramas": 148,
     "totalMovies": 28,
-    "totalAll": 177,
+    "totalAll": 176,
     "platforms": {
       "爱奇艺": 54,
       "腾讯": 41,
