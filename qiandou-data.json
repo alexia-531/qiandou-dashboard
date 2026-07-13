@@ -1,5 +1,5 @@
 {
-  "updateTime": "2026-07-10 14:37",
+  "updateTime": "2026-07-13 12:11 CST（自动更新）",
   "dramas": [
     {
       "name": "灿如繁星",
@@ -71,12 +71,12 @@
       "name": "雀骨",
       "actors": "侯明昊 / 艾米 / 王以纶 / 马秋元 / 米热 / 何润东",
       "team": "高翊浚",
-      "status": "定档26/7/11",
+      "status": "26/7/11 开播",
       "platform": "爱奇艺",
-      "infoType": "已定档/待播",
-      "remarks": "古装权谋爱情剧；28集；爱奇艺独播；暑期档 📅定档2026-07-11",
+      "infoType": "定档/上线",
+      "remarks": "古装权谋爱情剧；28集；爱奇艺独播；7/11开播 📅定档2026-07-11",
       "category": "播出/定档",
-      "airStatus": "upcoming"
+      "airStatus": "airing"
     },
     {
       "name": "江山为聘",
@@ -247,12 +247,12 @@
       "name": "深渊无间",
       "actors": "任嘉伦 / 秦俊杰 / 王阳 / 姜珮瑶 / 刘端端",
       "team": "刘璋牧",
-      "status": "已下证 待播；网传7月10日",
+      "status": "26/7/10 开播",
       "platform": "爱奇艺",
-      "infoType": "已下证待播",
-      "remarks": "硬核刑侦剧；2026年待播；导演刘璋牧",
-      "category": "已下证待播",
-      "airStatus": null
+      "infoType": "定档/上线",
+      "remarks": "硬核刑侦剧；2026.7.10优酷开播；导演刘璋牧",
+      "category": "播出/定档",
+      "airStatus": "airing"
     },
     {
       "name": "折月亮",
@@ -379,10 +379,10 @@
       "name": "司宫令",
       "actors": "丁禹兮/宋祖儿/叶祖新/饶嘉迪/焉栩嘉/高鹤元/杨舒伊/康可人",
       "team": "王成欣",
-      "status": "26/6/23 杀青",
+      "status": "26/7/7 杀青",
       "platform": "腾讯",
       "infoType": "杀青",
-      "remarks": "📅杀青2026-06-23",
+      "remarks": "📅杀青2026-07-07",
       "category": "已杀青待播",
       "airStatus": null
     },
@@ -1347,11 +1347,11 @@
       "name": "我与爱同谋",
       "actors": "关晓彤 / 林一 / 刘奕君 / 王鸥 / 宋洋 / 姚琛",
       "team": "蔡婧",
-      "status": "拍摄中 26/5/6 开机",
+      "status": "26/7/1 杀青",
       "platform": "",
-      "infoType": "拍摄/开机",
-      "remarks": "📅开拍2026-05-06",
-      "category": "拍摄中",
+      "infoType": "杀青",
+      "remarks": "奇幻悬疑爱情；10集；关晓彤林一；7/1青岛杀青 📅杀青2026-07-01",
+      "category": "已杀青待播",
       "airStatus": null
     },
     {
@@ -1628,6 +1628,17 @@
       "remarks": "改编自熊召政《张居正》；导演汪俊；编剧常江/李洁；陈道明监制；40集",
       "category": "待播",
       "airStatus": null
+    },
+    {
+      "name": "小芳",
+      "actors": "王影璐 / 辛云来",
+      "team": "",
+      "status": "26/7/13 开播",
+      "platform": "腾讯视频",
+      "infoType": "定档/上线",
+      "remarks": "现实向乡村言情；7/13腾讯开播 📅定档2026-07-13",
+      "category": "播出/定档",
+      "airStatus": "airing"
     }
   ],
   "movies": [
@@ -1864,16 +1875,16 @@
   ],
   "stats": {
     "categories": {
-      "播出/定档": 8,
-      "已下证待播": 18,
-      "已杀青待播": 86,
-      "拍摄中": 28,
+      "播出/定档": 10,
+      "已下证待播": 17,
+      "已杀青待播": 87,
+      "拍摄中": 27,
       "拍摄中（暂停/待补）": 1,
       "待播": 7
     },
-    "totalDramas": 148,
+    "totalDramas": 149,
     "totalMovies": 28,
-    "totalAll": 176,
+    "totalAll": 177,
     "platforms": {
       "爱奇艺": 54,
       "腾讯": 41,
