@@ -116,6 +116,8 @@ body{
 .lb-body{padding:12px 14px;flex:1;display:flex;flex-direction:column;gap:6px}
 .lb-name{font-size:16px;font-weight:700;color:#1e293b;letter-spacing:-.2px;line-height:1.3}
 .lb-actors{font-size:12px;color:#64748b;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.actor-link{color:var(--accent);text-decoration:none;cursor:pointer;border-bottom:1px dotted rgba(47,111,237,.4)}
+.actor-link:hover{text-decoration:underline}
 .lb-tags{display:flex;flex-wrap:wrap;gap:4px}
 .lb-tag{
   display:inline-flex;align-items:center;gap:3px;font-size:10.5px;padding:2px 7px;border-radius:10px;
@@ -687,6 +689,27 @@ function showModule(name){
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
+/* 剧集汇总里的演员 → 跳转到艺人爆火潜力评估（同源 artist_report.html?name=，数据完全一致） */
+function linkActors(s){
+  if(!s||s==='—') return (s||'—');
+  var names=s.replace(/[、（(]/g,',').replace(/[）)]/g,'').split(/[,，、\/]/).map(function(x){return x.trim();}).filter(Boolean);
+  if(!names.length) return s;
+  return names.map(function(n){
+    return '<span class="actor-link" data-name="'+n.replace(/"/g,'&quot;')+'">'+n+'</span>';
+  }).join('、');
+}
+function openArtist(e, name){
+  if(e&&e.preventDefault) e.preventDefault();
+  var dm=document.getElementById('detailModal'); if(dm) dm.remove();
+  showModule('artist');
+  var f=document.getElementById('artistReportFrame');
+  if(f) f.src='artist_report.html?name='+encodeURIComponent(name);
+}
+document.addEventListener('click', function(e){
+  var el = e.target && e.target.closest ? e.target.closest('.actor-link') : null;
+  if(el) openArtist(e, el.getAttribute('data-name'));
+});
+
 
 var __ART = {"ranking": [{"name": "沈腾", "rank": 1, "final": 4.6, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 4.65, 3.65], "photo": null, "leads": 1, "works": 1}, {"name": "刘德华", "rank": 2, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 2, "works": 4}, {"name": "易烊千玺", "rank": 3, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 2, "works": 3}, {"name": "李现", "rank": 4, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": "posters/artists/%E6%9D%8E%E7%8E%B0.jpg", "leads": 2, "works": 3}, {"name": "肖战", "rank": 5, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E8%82%96%E6%88%98.jpg", "leads": 3, "works": 3}, {"name": "丁禹兮", "rank": 6, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 2, "works": 2}, {"name": "张康乐", "rank": 7, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E5%BC%A0%E5%BA%B7%E4%B9%90.jpg", "leads": 0, "works": 2}, {"name": "田曦薇", "rank": 8, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E7%94%B0%E6%9B%A6%E8%96%87.jpg", "leads": 2, "works": 2}, {"name": "赵丽颖", "rank": 9, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 0, "works": 2}, {"name": "迪丽热巴", "rank": 10, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E8%BF%AA%E4%B8%BD%E7%83%AD%E5%B7%B4.jpg", "leads": 1, "works": 2}, {"name": "魏大勋", "rank": 11, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E9%AD%8F%E5%A4%A7%E5%8B%8B.jpg", "leads": 0, "works": 2}, {"name": "叶童", "rank": 12, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "李昀锐", "rank": 13, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E6%9D%8E%E6%98%80%E9%94%90.jpg", "leads": 0, "works": 1}, {"name": "梁家辉", "rank": 14, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "檀健次", "rank": 15, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 1, "works": 1}, {"name": "王一博", "rank": 16, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 1, "works": 1}, {"name": "谢霆锋", "rank": 17, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "贾玲", "rank": 18, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 1, "works": 1}, {"name": "高圆圆", "rank": 19, "final": 4.55, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "王楚然", "rank": 20, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 3.65], "photo": "posters/artists/%E7%8E%8B%E6%A5%9A%E7%84%B6.jpg", "leads": 2, "works": 4}, {"name": "田嘉瑞", "rank": 21, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 3.65], "photo": "posters/artists/%E7%94%B0%E5%98%89%E7%91%9E.jpg", "leads": 1, "works": 3}, {"name": "大鹏", "rank": 22, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 3.65], "photo": null, "leads": 1, "works": 2}, {"name": "王安宇", "rank": 23, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 3.65, 4.65, 4.65, 4.65, 4.65], "photo": "posters/artists/%E7%8E%8B%E5%AE%89%E5%AE%87.jpg", "leads": 1, "works": 2}, {"name": "鞠婧祎", "rank": 24, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 3.65], "photo": null, "leads": 2, "works": 2}, {"name": "文俊辉", "rank": 25, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 3.65], "photo": null, "leads": 0, "works": 1}, {"name": "梁朝伟", "rank": 26, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 4.65, 3.65], "photo": null, "leads": 1, "works": 1}, {"name": "程潇", "rank": 27, "final": 4.5, "grade": "S+", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 3.65, 3.65], "photo": null, "leads": 0, "works": 1}, {"name": "宋祖儿", "rank": 28, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 2.65, 4.65], "photo": null, "leads": 1, "works": 3}, {"name": "李沁", "rank": 29, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 4.65], "photo": "posters/artists/%E6%9D%8E%E6%B2%81.jpg", "leads": 0, "works": 3}, {"name": "杨幂", "rank": 30, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 2.65, 4.65], "photo": null, "leads": 1, "works": 3}, {"name": "卢昱晓", "rank": 31, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 2.65, 4.65], "photo": null, "leads": 0, "works": 2}, {"name": "孙千", "rank": 32, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 4.65], "photo": "posters/artists/%E5%AD%99%E5%8D%83.jpg", "leads": 0, "works": 2}, {"name": "赵今麦", "rank": 33, "final": 4.45, "grade": "S", "dims": [4.65, 3.65, 4.65, 4.65, 4.65, 4.65, 4.65], "photo": null, "leads": 1, "works": 1}, {"name": "陈伟霆", "rank": 34, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 4.65], "photo": null, "leads": 1, "works": 1}, {"name": "雷佳音", "rank": 35, "final": 4.45, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "虞书欣", "rank": 36, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 2.65, 3.65], "photo": "posters/artists/%E8%99%9E%E4%B9%A6%E6%AC%A3.jpg", "leads": 4, "works": 4}, {"name": "陈哲远", "rank": 37, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 3.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E9%99%88%E5%93%B2%E8%BF%9C.jpg", "leads": 2, "works": 4}, {"name": "刘昊然", "rank": 38, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 3.65, 4.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E5%88%98%E6%98%8A%E7%84%B6.jpg", "leads": 3, "works": 3}, {"name": "刘学义", "rank": 39, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 3.65, 4.65, 3.65, 4.65], "photo": "posters/artists/%E5%88%98%E5%AD%A6%E4%B9%89.jpg", "leads": 0, "works": 2}, {"name": "景甜", "rank": 40, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 3.65], "photo": "posters/artists/%E6%99%AF%E7%94%9C.jpg", "leads": 2, "works": 2}, {"name": "舒淇", "rank": 41, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 3.65], "photo": null, "leads": 1, "works": 2}, {"name": "岳云鹏", "rank": 42, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 3.65, 3.65, 3.65], "photo": "posters/artists/%E5%B2%B3%E4%BA%91%E9%B9%8F.jpg", "leads": 0, "works": 1}, {"name": "赵露思", "rank": 43, "final": 4.4, "grade": "S", "dims": [4.65, 4.65, 4.65, 4.65, 4.65, 2.65, 3.65], "photo": null, "leads": 1, "works": 1}, {"name": "张艺兴", "rank": 44, "final": 4.35, "grade": "S", "dims": [4.65, 4.65, 3.65, 4.65, 4.65, 3.65, 3.65], "photo": null, "leads": 0, "works": 2}, {"name": "杨紫", "rank": 45, "final": 4.35, "grade": "S", "dims": [4.65, 4.65, 4.65, 3.65, 4.65, 3.65, 3.65], "photo": "posters/artists/%E6%9D%A8%E7%B4%AB.jpg", "leads": 2, "works": 2}, {"name": "龚俊", "rank": 46, "final": 4.35, "grade": "S", "dims": [4.65, 4.65, 3.65, 4.65, 3.65, 4.65, 3.65], "photo": "posters/artists/%E9%BE%9A%E4%BF%8A.jpg", "leads": 2, "works": 2}, {"name": "姚安娜", "rank": 47, "final": 4.35, "grade": "S", "dims": [4.65, 3.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "姜妍", "rank": 48, "final": 4.35, "grade": "S", "dims": [4.65, 3.65, 4.65, 4.65, 3.65, 4.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "文淇", "rank": 49, "final": 4.35, "grade": "S", "dims": [4.65, 3.65, 4.65, 4.65, 4.65, 3.65, 4.65], "photo": null, "leads": 0, "works": 1}, {"name": "章若楠", "rank": 50, "final": 4.35, "grade": "S", "dims": [4.65, 4.65, 4.65, 3.65, 4.65, 3.65, 3.65], "photo": null, "leads": 0, "works": 1}]};
 
@@ -784,7 +807,7 @@ function renderHeat(){
       '</div>'+
       '<div class="lb-body">'+
         '<div class="lb-name">'+r.name+'</div>'+
-        '<div class="lb-actors">'+r.actors+'</div>'+
+        '<div class="lb-actors">'+linkActors(r.actors)+'</div>'+
         '<div class="lb-tags">'+
           '<span class="lb-tag pf">'+r.platform+'</span>'+
           tags.map(function(t){return '<span class="lb-tag ht">'+t+'</span>';}).join('')+
@@ -961,7 +984,7 @@ function renderTable(ftab,fpage){
   document.getElementById('tblBody').innerHTML=page.map(function(d,i){
     var gi=__D.dramas.indexOf(d);
     return '<tr><td>'+(start+i+1)+'</td><td class="nm"><span class="lk" onclick="showDetail('+gi+',\'drama\')">'+d.name+'</span>'+(ED.on?'<span class="ed-ico" onclick="edOpenEdit(\'drama\','+gi+')">✎</span>':'')+'</td>'+
-      '<td class="ad">'+(d.actors||'—')+'</td><td class="dr">'+(d.team||'—')+'</td>'+
+      '<td class="ad">'+linkActors(d.actors||'—')+'</td><td class="dr">'+(d.team||'—')+'</td>'+
       '<td>'+fmtP(d.platform)+'</td><td>'+badge(d)+'</td>'+
       '<td class="rm">'+(d.remarks||'—')+'</td></tr>';
   }).join('');
@@ -993,7 +1016,7 @@ function renderMovies(fpage){
     if((b||'').indexOf('定档')>=0) b='<span class="bd bd-date">定档</span>';
     else if((b||'').indexOf('上映')>=0) b='<span class="bd bd-live">'+b+'</span>';
     return '<tr><td>'+(start+i+1)+'</td><td class="nm"><span class="lk" onclick="showDetail('+mi+',\'movie\')">'+m.name+'</span>'+(ED.on?'<span class="ed-ico" onclick="edOpenEdit(\'movie\','+mi+')">✎</span>':'')+'</td><td>'+b+'</td>'+
-      '<td class="ad">'+(m.actors||'—')+'</td><td>'+(m.director||'—')+'</td><td>'+(m.genre||'—')+'</td><td class="rm">'+(m.remarks||'—')+'</td></tr>';
+      '<td class="ad">'+linkActors(m.actors||'—')+'</td><td>'+(m.director||'—')+'</td><td>'+(m.genre||'—')+'</td><td class="rm">'+(m.remarks||'—')+'</td></tr>';
   }).join('');
 
   var ph='';
@@ -1218,7 +1241,7 @@ function renderDetail(d, rank, isAiring, isMovie, isUpcoming){
   }
   html += '<div class="modal-info">'+
       '<h3>'+d.name+(rank?' <span style="font-size:13px;color:var(--t2);font-weight:400">#'+rank+' '+(isAiring?'在播':(isUpcoming?'待播期待':(isMovie&&d.boxOffice!=null?'在映':'详情')))+'</span>':'')+'</h3>'+
-      '<div class="m-cast"><span class="m-cast-k">👥 演员阵容</span> '+(d.actors||'—')+'</div>'+
+      '<div class="m-cast"><span class="m-cast-k">👥 演员阵容</span> '+linkActors(d.actors||'—')+'</div>'+
       '<div class="m-tags">';
   if(!isMovie && d.platform && d.platform!=='-') html += '<span class="lb-tag pf">'+fmtP(d.platform)+'</span>';
   if(isMovie && d.platform) html += '<span class="lb-tag pf">'+d.platform+'</span>';
